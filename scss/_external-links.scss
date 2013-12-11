@@ -1,0 +1,41 @@
+$el: 'external-links';
+
+.#{$el} {
+  @include container;
+
+  h2 {
+    text-indent: -9999px;
+  }
+}
+
+.#{$el}-item {
+  @include at-breakpoint($small) {
+    @include span-columns(4);
+    @include nth-omega;
+  }
+
+  h3 {
+    font-size: mod(2);
+    text-align: center;
+    color: $secondary-color;
+    border-bottom: 1px solid $secondary-color;
+    line-height: 2.25;
+  }
+
+  .explanation {
+    font-style: italic;
+    margin-bottom: 0.25em;
+    font-weight: 300;
+  }
+
+  .link {
+    margin-top: -0.25em;
+
+    a {
+      color: $secondary-color;
+      &:hover {
+        color: lighten($secondary-color, 15%);
+      }
+    }
+  }
+}

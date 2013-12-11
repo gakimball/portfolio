@@ -1,7 +1,11 @@
 <?php
 
-require __DIR__.'/../vendor/autoload.php';
-Dotenv::load(__DIR__.'/..');
+$base = __DIR__.'/..';
+
+require $base.'/vendor/autoload.php';
+Dotenv::load($base);
+
+require $base.'/lib/lastfm.php';
 
 ?>
 <!doctype html>
