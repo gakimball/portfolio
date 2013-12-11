@@ -2,11 +2,12 @@
 
 function getTrack() {
   $params = array(
-    'method'  => 'user.getrecenttracks',
-    'limit'   => '1',
-    'user'    => 'gakon5',
-    'api_key' => getenv('LASTFM_API_KEY'),
-    'format'  => 'json'
+    'method'     => 'user.getrecenttracks',
+    'nowplaying' => 'true',
+    'limit'      => '1',
+    'user'       => 'gakon5',
+    'api_key'    => getenv('LASTFM_API_KEY'),
+    'format'     => 'json'
   );
   $query = 'http://ws.audioscrobbler.com/2.0/?' . http_build_query($params);
 
@@ -16,7 +17,7 @@ function getTrack() {
   $response = curl_exec($request);
   if ($response !== false) {
     $data = json_decode($response, true);
-    $track = $data['recenttracks']['track'][0];
+    $track = $data['recenttracks']['track'];
 
     return array(
       'title'  => $track['name'],

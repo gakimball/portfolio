@@ -57,6 +57,13 @@ $h: 'header';
     &:hover {
       color: #ccc;
     }
+
+    &::before {
+      margin-right: 0.4em;
+      font-size: mod(2);
+      position: relative;
+      top: 0.2em;
+    }
   }
 
   @include at-breakpoint($medium) {

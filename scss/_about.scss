@@ -64,4 +64,10 @@ $a: 'about';
     font-style: italic;
     line-height: 1.5;
   }
+
+  &::before {
+    float: left;
+    line-height: 2.6;
+    margin-right: 0.5em;
+  }
 }

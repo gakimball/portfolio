@@ -32,8 +32,8 @@ require $base.'/lib/github.php';
       <span class="logo-after">web + mobile designer</span>
 
       <div class="header-contact">
-        <a href="mailto:gakimball@bsu.edu" class="email">Email</a>
-        <a href="http://twitter.com/geoffkimball" class="twitter">Twitter</a>
+        <a href="mailto:gakimball@bsu.edu" class="email ss-mail">Email</a>
+        <a href="http://twitter.com/geoffkimball" class="twitter ss-twitter">Twitter</a>
       </div>
     </div>
   </header>

@@ -15,11 +15,11 @@ $el: 'external-links';
   }
 
   h3 {
-    font-size: mod(2);
+    font-size: mod(3);
     text-align: center;
     color: $secondary-color;
     border-bottom: 1px solid $secondary-color;
-    line-height: 2.25;
+    line-height: 1.75;
   }
 
   .explanation {
@@ -35,6 +35,10 @@ $el: 'external-links';
       color: $secondary-color;
       &:hover {
         color: lighten($secondary-color, 15%);
+      }
+      &::after {
+        content: ' \2192';
+        font-weight: 700;
       }
     }
   }
