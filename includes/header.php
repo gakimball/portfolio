@@ -5,6 +5,7 @@ $base = __DIR__.'/..';
 require $base.'/vendor/autoload.php';
 Dotenv::load($base);
 
+require $base.'/lib/twitter.php';
 require $base.'/lib/lastfm.php';
 require $base.'/lib/github.php';
 

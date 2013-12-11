@@ -3,8 +3,50 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "359ab8fc1e33734399f4591e6be94b66",
+    "hash": "240b66faa2f7ac1616faf83b5f7568b3",
     "packages": [
+        {
+            "name": "abraham/twitteroauth",
+            "version": "dev-add-composer-json",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tomohikosato/twitteroauth.git",
+                "reference": "cc2449455b91890ee48eff68c3d5270530e64ed8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tomohikosato/twitteroauth/zipball/cc2449455b91890ee48eff68c3d5270530e64ed8",
+                "reference": "cc2449455b91890ee48eff68c3d5270530e64ed8",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2"
+            },
+            "type": "package",
+            "autoload": {
+                "files": [
+                    "twitteroauth/twitteroauth.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Abraham Williams",
+                    "email": "abraham@abrah.am",
+                    "homepage": "http://abrah.am",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Twitter oauth",
+            "keywords": [
+                "Twitter API",
+                "Twitter oAuth"
+            ],
+            "time": "2012-11-19 02:41:52"
+        },
         {
             "name": "vlucas/phpdotenv",
             "version": "1.0.2",
@@ -56,9 +98,9 @@
 
     ],
     "minimum-stability": "stable",
-    "stability-flags": [
-
-    ],
+    "stability-flags": {
+        "abraham/twitteroauth": 20
+    },
     "platform": [
 
     ],

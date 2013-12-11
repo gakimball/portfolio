@@ -1,5 +1,6 @@
 {
-    "require": {
-        "vlucas/phpdotenv": "1.0.2"
-    }
+  "require": {
+      "vlucas/phpdotenv": "1.0.2",
+      "abraham/twitteroauth": "dev-add-composer-json"
+  }
 }
