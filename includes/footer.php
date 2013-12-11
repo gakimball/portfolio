@@ -20,9 +20,10 @@
     </section>
 
     <section class="external-links-item">
+      <? $commit = getCommit(); ?>
       <h3>GitHub</h3>
       <p class="explanation">Last commit to this site</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, temporibus, quibusdam sequi error nulla repellat suscipit!</p>
+      <p><?=$commit['sha'] ?>: <?=$commit['message'] ?></p>
       <p class="link"><a href="http://github.com/gakimball">Github: gakimball</a></p>
     </section>
 
