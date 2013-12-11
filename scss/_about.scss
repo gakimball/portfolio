@@ -1,0 +1,67 @@
+$a: 'about';
+
+.#{$a} {
+  @include clearfix;
+
+  h2 {
+    @include at-breakpoint($medium) {
+      margin-bottom: 1em;
+    }
+  }
+}
+
+.#{$a}-photo {
+  margin-bottom: 1em;
+
+  img {
+    display: block;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 1000px;
+    margin: 0 auto;
+    max-width: 200px;
+
+    @include at-breakpoint($small) {
+      max-width: none;
+    }
+  }
+}
+
+@include at-breakpoint($small) {
+  .#{$a}-photo {
+    @include span-columns(3);
+  }
+  .#{$a}-bio {
+    @include span-columns(9);
+    @include omega;
+  }
+}
+
+@include at-breakpoint($large) {
+  .#{$a} {
+    p {
+      font-size: mod(1);
+      font-weight: 300;
+    }
+  }
+  .#{$a}-photo {
+    @include span-columns(3);
+  }
+  .#{$a}-bio {
+    @include span-columns(8);
+    @include pre(1);
+    @include omega;
+  }
+}
+
+.#{$a}-email-link {
+  font-size: mod(4);
+  font-weight: 600;
+
+  span {
+    display: block;
+    font-size: 0.667em;
+    font-style: italic;
+    line-height: 1.5;
+  }
+}

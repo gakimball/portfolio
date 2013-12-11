@@ -1,0 +1,28 @@
+.button {
+  $padding: 0.5em;
+
+  position: relative;
+  display: inline-block;
+  font-size: mod(1);
+  font-weight: 600;
+  text-decoration: none;
+  padding: $padding;
+  color: $primary-color;
+  border-bottom: 4px solid $primary-color;
+  margin-right: 1em;
+
+  &, &:hover {
+    @include transition-property(color padding top);
+    @include transition-duration(0.25s);
+    @include transition-timing-function(ease-out);
+  }
+  &:hover {
+    color: lighten($primary-color, 25%);
+    border-bottom-color: lighten($primary-color, 25%);
+    top: -0.25em;
+    padding: {
+      top: 0.25em;
+      bottom: 0.75em;
+    }
+  }
+}

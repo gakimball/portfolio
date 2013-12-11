@@ -1,0 +1,23 @@
+@mixin clearfix {
+  &:before,
+  &:after {
+      content: " "; /* 1 */
+      display: table; /* 2 */
+  }
+  &:after {
+      clear: both;
+  }
+  & {
+      *zoom: 1;
+  }
+}
+
+@function emCalc($n, $base: 16px) {
+  @return $n / $base * 1em;
+}
+
+@mixin media($width) {
+  @media screen and (min-width: emCalc($width)) {
+    @content;
+  }
+}

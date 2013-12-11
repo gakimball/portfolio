@@ -1,0 +1,52 @@
+$pi: 'portfolio-item';
+
+.#{$pi} {
+  @include clearfix;
+  margin-top: 3.5em;
+
+  &:not(:last-child)::after {
+    display: block;
+    position: static;
+    content: '';
+    width: 60%;
+    height: 3.5em;
+    border-bottom: 1px solid #ccc;
+    margin: 0 auto;
+  }
+
+  .subtitle {
+    font-style: italic;
+    color: $secondary-color;
+  }
+}
+
+.#{$pi}-content {
+  @include at-breakpoint(emCalc(768px) 12) {
+    @include span-columns(6);
+    @include omega;
+  }
+}
+
+.#{$pi}-thumb {
+  @include at-breakpoint(emCalc(768px) 12) {
+    @include span-columns(6);
+  }
+  
+  margin-bottom: 1em;
+  @include at-breakpoint(emCalc(768px)) {
+    margin-bottom: 0;
+  }
+
+  img {
+    width: 100%;
+    border: 1px solid #ccc;
+  }
+}
+
+.portfolio {
+  margin-bottom: 2em;
+
+  @include at-breakpoint($medium) {
+    margin-bottom: 4em;
+  }
+}

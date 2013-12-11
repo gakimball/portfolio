@@ -1,0 +1,75 @@
+$h: 'header';
+
+.#{$h} {
+  background: #444;
+  padding: {
+    top: 0.6em;
+    bottom: 0.6em;
+  }
+
+  @include at-breakpoint($medium) {
+    padding: {
+      top: 0.8em;
+      bottom: 0.8em;
+    }
+  }
+
+  .logo {
+    display: inline-block;
+    color: white;
+    text-transform: lowercase;
+    margin: {
+      right: 0.3em;
+      bottom: 0;
+    }
+  }
+  .logo-after {
+    display: none;
+    color: #ccc;
+
+    @include at-breakpoint($small) {
+      display: inline-block;
+    }
+  }
+  .logo, .after-logo {
+    cursor: default;
+    vertical-align: baseline;
+  }
+}
+
+.#{$h}-inner {
+  @include container;
+  position: relative;
+}
+
+.#{$h}-contact {
+  display: block;
+  padding: {
+    top: 0.75em;
+    bottom: 0.5em;
+  }
+
+  a {
+    display: inline-block;
+    color: #fff;
+    margin-right: 0.75em;
+
+    &:hover {
+      color: #ccc;
+    }
+  }
+
+  @include at-breakpoint($medium) {
+    position: absolute;
+    top: 0.35em;
+    right: $gutter-width;
+    padding: 0;
+
+    a {
+      margin: {
+        right: 0;
+        left: 0.75em;
+      }
+    }
+  }
+}

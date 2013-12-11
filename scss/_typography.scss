@@ -1,0 +1,86 @@
+body {
+  font-size: 100%;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+@function mod($n) {
+  @return ms($n, 16px 100px, fifth());
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, li {
+  margin-bottom: 1rem;
+}
+p, li {
+  line-height: 1.5;
+}
+
+.header {
+  .logo {
+    font-size: mod(4);
+    font-weight: 700;
+  }
+  .logo-after {
+    font-size: mod(3);
+    font-weight: 100;
+  }
+}
+.header-contact {
+  a {
+    font-size: mod(2);
+  }
+}
+
+.homepage-hero {
+  .tagline {
+    font-size: mod(9);
+    font-weight: 900;
+  }
+  .tagline-after {
+    font-size: mod(3);
+    font-weight: 400;
+  }
+  .button {
+    font-size: mod(3);
+  }
+}
+
+h2 {
+  font-size: mod(6);
+  font-weight: 300;
+
+  & + p.subtitle {
+    font-size: mod(3);
+    font-weight: 300;
+    margin-top: -0.5em;
+  }
+}
+
+h3 {
+  font-size: mod(5);
+  font-weight: 400;
+
+  & + p.subtitle {
+    font-size: mod(1);
+    font-weight: 400;
+    margin-top: -0.5em;
+  }
+}
+
+.button {
+  font-size: mod(1);
+}
+
+a {
+  text-decoration: none;
+  color: $primary-color;
+
+  &, &:hover {
+    @include transition-property(color);
+    @include transition-duration(0.15s);
+    @include transition-timing-function(ease-out);
+  }
+  &:hover {
+    color: lighten($primary-color, 15%);
+  }
+}

@@ -1,0 +1,55 @@
+$hh: 'homepage-hero';
+
+.#{$hh} {
+  background: $primary-color;
+  color: #fff;
+  padding: {
+    top: 1em;
+    bottom: 1em;
+  }
+  margin-bottom: 1.5em;
+
+  @include at-breakpoint(emCalc(768px)) {
+    padding: {
+      top: 4em;
+      bottom: 4em;
+    }
+    margin-bottom: 3em;
+  }
+}
+
+.#{$hh}-inner {
+  @include container;
+}
+
+.#{$hh}-content {
+  @include at-breakpoint(emCalc(768px) 12) {
+    @include span-columns(6);
+    @include isolate(7);
+  }
+
+  .tagline {
+    line-height: 1;
+    text-transform: lowercase;
+  }
+
+  .button {
+    position: static;
+    border: 0;
+    border-radius: 8px;
+    background: white;
+
+    &, &:hover {
+      padding: 0.5em 0.8em;
+    }
+    &:hover {
+    }
+  }
+}
+
+.#{$hh}-pictures {
+  @include at-breakpoint(emCalc(768px) 12) {
+    @include span-columns(6);
+    @include isolate(1);
+  }
+}
