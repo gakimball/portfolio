@@ -15,7 +15,7 @@ $el: 'external-links';
   }
 
   h3 {
-    font-size: mod(3);
+    @include mod(3);
     text-align: center;
     color: $secondary-color;
     border-bottom: 1px solid $secondary-color;

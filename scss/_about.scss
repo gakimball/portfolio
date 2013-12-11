@@ -40,7 +40,7 @@ $a: 'about';
 @include at-breakpoint($large) {
   .#{$a} {
     p {
-      font-size: mod(1);
+      @include mod(1);
       font-weight: 300;
     }
   }
@@ -55,7 +55,7 @@ $a: 'about';
 }
 
 .#{$a}-email-link {
-  font-size: mod(4);
+  @include mod(4);
   font-weight: 600;
 
   span {
@@ -69,5 +69,10 @@ $a: 'about';
     float: left;
     line-height: 2.6;
     margin-right: 0.5em;
+
+    display: none;
+    @include at-breakpoint($small) {
+      display: inline;
+    }
   }
 }

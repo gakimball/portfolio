@@ -28,6 +28,8 @@ $hh: 'homepage-hero';
     @include isolate(7);
   }
 
+  white-space: nowrap;
+
   .tagline {
     line-height: 1;
     text-transform: lowercase;

@@ -3,13 +3,13 @@
 
   position: relative;
   display: inline-block;
-  font-size: mod(1);
+  @include mod(1);
   font-weight: 600;
   text-decoration: none;
   padding: $padding;
   color: $primary-color;
   border-bottom: 4px solid $primary-color;
-  margin-right: 1em;
+  margin: 0 1em 1em 0;
 
   &, &:hover {
     @include transition-property(color padding top);
