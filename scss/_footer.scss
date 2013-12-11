@@ -1,0 +1,52 @@
+$bottom-border-height: 8px;
+
+body {
+  border-bottom: $bottom-border-height solid #333;
+}
+
+.footer {
+  @include container;
+
+  padding: {
+    top: 4em;
+    bottom: 2em;
+  }
+  position: relative;
+  color: #666;
+
+  p {
+    @include mod(-1);
+    font-weight: 600;
+    letter-spacing: 1;
+    line-height: 1;
+    margin-bottom: 0.5em;
+  }
+  a {
+    color: #000;
+
+    &:hover {
+      color: #000;
+      text-decoration: underline;
+    }
+  }
+
+  // Color strips
+  &::before, &::after {
+    display: block;
+    position: absolute;
+    content: '';
+    width: 100px;
+    height: $bottom-border-height;
+    bottom: -$bottom-border-height;
+  }
+  &::before {
+    left: $gutter-width / 2;
+    background: $primary-color;
+    box-shadow: 100px 0 0 $secondary-color, 200px 0 0 $tertiary-color;
+  }
+  &::after {
+    right: $gutter-width / 2;
+    background: #666;
+    box-shadow: -100px 0 0 #ccc;
+  }
+}

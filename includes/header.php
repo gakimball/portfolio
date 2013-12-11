@@ -34,7 +34,7 @@ require $base.'/lib/github.php';
 
       <div class="header-contact">
         <a href="mailto:gakimball@bsu.edu" class="email ss-mail">Email</a>
-        <a href="http://twitter.com/geoffkimball" class="twitter ss-twitter">Twitter</a>
+        <a href="http://twitter.com/geoffkimball" class="twitter ss-twitter" target="_blank">Twitter</a>
       </div>
     </div>
   </header>

@@ -81,6 +81,8 @@
     <div class="about-bio">
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, ipsum, numquam, consectetur itaque eligendi maxime aliquam aut tempora accusamus doloremque eaque saepe! Minus, labore deleniti culpa laudantium voluptatum corrupti perspiciatis.</p>
 
+      <p><em>Hey, I'm looking for a full-time position!</em></p>
+
       <a href="mailto:gakimball@bsu.edu" class="about-email-link ss-mail">
         <span>email me</span>
         gakimball@bsu.edu
