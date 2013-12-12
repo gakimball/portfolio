@@ -75,7 +75,7 @@
     <h2>About me</h2>
 
     <div class="about-photo">
-      <img src="http://placehold.it/100x100" alt="">
+      <img src="http://placehold.it/100x100" alt="Portrait of me.">
     </div>
 
     <div class="about-bio">

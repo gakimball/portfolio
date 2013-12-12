@@ -20,18 +20,7 @@ $pi: 'portfolio-item';
   }
 }
 
-.#{$pi}-content {
-  @include at-breakpoint(emCalc(768px) 12) {
-    @include span-columns(6);
-    @include omega;
-  }
-}
-
 .#{$pi}-thumb {
-  @include at-breakpoint(emCalc(768px) 12) {
-    @include span-columns(6);
-  }
-  
   margin-bottom: 1em;
   @include at-breakpoint(emCalc(768px)) {
     margin-bottom: 0;
@@ -40,6 +29,25 @@ $pi: 'portfolio-item';
   img {
     width: 100%;
     border: 1px solid #ccc;
+  }
+}
+
+@include at-breakpoint($small) {
+  .#{$pi}-content {
+    @include span-columns(7);
+    @include omega;
+  }
+  .#{$pi}-thumb {
+    @include span-columns(5);
+  }
+}
+@include at-breakpoint($large) {
+  .#{$pi}-content {
+    @include span-columns(6);
+    @include omega;
+  }
+  .#{$pi}-thumb {
+    @include span-columns(6);
   }
 }
 

@@ -2,6 +2,10 @@ body {
   font-size: 100%;
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
+
+  &::-moz-selection, &::selection {
+    background: rgba($secondary-color, 0.999);
+  }
 }
 
 @function mod($n) {

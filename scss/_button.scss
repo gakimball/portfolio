@@ -10,6 +10,7 @@
   color: $primary-color;
   border-bottom: 4px solid $primary-color;
   margin: 0 1em 1em 0;
+  @include user-select(none);
 
   &, &:hover {
     @include transition-property(color padding top);

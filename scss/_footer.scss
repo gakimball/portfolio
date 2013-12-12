@@ -31,22 +31,41 @@ body {
   }
 
   // Color strips
+  $default-width: 30px;
+  $large-width: 100px;
+
   &::before, &::after {
     display: block;
     position: absolute;
     content: '';
-    width: 100px;
+    width: $default-width * 3;
     height: $bottom-border-height;
     bottom: -$bottom-border-height;
   }
   &::before {
     left: $gutter-width / 2;
     background: $primary-color;
-    box-shadow: 100px 0 0 $secondary-color, 200px 0 0 $tertiary-color;
+    box-shadow: 
+      $default-width 0 0 $secondary-color, 
+      $default-width * 2 0 0 $tertiary-color,
+      $default-width * 3 0 0 #ccc,
+      $default-width * 4 0 0 #666;
   }
-  &::after {
-    right: $gutter-width / 2;
-    background: #666;
-    box-shadow: -100px 0 0 #ccc;
+
+  @include at-breakpoint($small) {
+    &::before, &::after {
+      width: $large-width;
+    }
+    &::before {
+      background: $primary-color;
+      box-shadow: 
+        $large-width 0 0 $secondary-color, 
+        $large-width * 2 0 0 $tertiary-color;
+    }
+    &::after {
+      right: $gutter-width / 2;
+      background: #666;
+      box-shadow: -$large-width 0 0 #ccc;
+    }
   }
 }
