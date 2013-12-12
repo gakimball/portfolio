@@ -8,10 +8,6 @@ body {
   }
 }
 
-@function mod($n) {
-  @return ms($n, 16px 100px, fifth());
-}
-
 @mixin mod($n) {
   font-size: ms($n, 16px 100px, fourth());
 
@@ -24,7 +20,10 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
   margin-bottom: 1rem;
 }
 p, li {
-  line-height: 1.5;
+  line-height: 1.4;
+  @include at-breakpoint($medium) {
+    line-height: 1.5;
+  }
 }
 em, i {
   font-style: italic;
