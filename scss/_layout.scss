@@ -3,6 +3,11 @@
   Grid and breakpoint settings.
 */
 
+// Main content container
+.main {
+  @include container;
+}
+
 // box-sizing: border-box is beautiful
 @include border-box-sizing;
 

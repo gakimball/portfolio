@@ -15,11 +15,15 @@ body {
   @include container;
 
   padding: {
-    top: 4em;
+    top: 2em;
     bottom: 2em;
   }
   position: relative;
   color: #666;
+
+  @include at-breakpoint($medium) {
+    padding-top: 4em;
+  }
 
   // Footer text is tiny
   p {
