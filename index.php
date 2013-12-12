@@ -27,7 +27,7 @@
 
     <section class="portfolio-item">
       <div class="portfolio-item-thumb">
-        <img src="http://placehold.it/16x9">
+        <img src="img/work/polymath.jpg">
       </div>
       <div class="portfolio-item-content">
         <h3>Polymath</h3>
@@ -42,7 +42,7 @@
 
     <section class="portfolio-item">
       <div class="portfolio-item-thumb">
-        <img src="http://placehold.it/16x9">
+        <img src="img/work/playground.jpg">
       </div>
       <div class="portfolio-item-content">
         <h3>ZURB Playground</h3>
@@ -57,7 +57,7 @@
 
     <section class="portfolio-item">
       <div class="portfolio-item-thumb">
-        <img src="http://placehold.it/16x9">
+        <img src="img/work/bsurec.jpg">
       </div>
       <div class="portfolio-item-content">
         <h3>Ball State Recreation</h3>
