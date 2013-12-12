@@ -21,6 +21,7 @@ require $base.'/lib/github.php';
   <title>Geoff Kimball — web + mobile designer</title>
 
   <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,300italic,400italic,600italic' rel='stylesheet' type='text/css'>
+  <link rel="shortcut icon" href="img/favicon.ico">
   <link rel="stylesheet" href="css/style.css" />
 
 </head>
@@ -29,7 +30,7 @@ require $base.'/lib/github.php';
   
   <header class="header">
     <div class="header-inner">
-      <h1 class="logo">Geoff Kimball</h1>
+      <h1 class="logo"><a href="index.php">Geoff Kimball</a></h1>
       <span class="logo-after">web + mobile designer</span>
 
       <div class="header-contact">

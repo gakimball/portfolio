@@ -24,12 +24,12 @@ $h: 'header';
   // My name
   .logo {
     display: inline-block;
-    color: white;
     text-transform: lowercase;
     margin: {
       right: 0.3em;
       bottom: 0;
     }
+    a, a:hover { color: white; }
   }
   // The text after my name
   .logo-after {
