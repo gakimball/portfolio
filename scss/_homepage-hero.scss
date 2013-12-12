@@ -1,5 +1,11 @@
+/*
+  HOMEPAGE HERO
+  Hero unit used at the top of the front page.
+*/
+
 $hh: 'homepage-hero';
 
+// Outer container
 .#{$hh} {
   background: $primary-color;
   color: #fff;
@@ -18,10 +24,12 @@ $hh: 'homepage-hero';
   }
 }
 
+// Inner container
 .#{$hh}-inner {
   @include container;
 }
 
+// Hero content
 .#{$hh}-content {
   @include at-breakpoint(emCalc(768px) 12) {
     @include span-columns(6);
@@ -31,11 +39,13 @@ $hh: 'homepage-hero';
   white-space: nowrap;
   overflow: hidden;
 
+  // "Design, pizza, and cats..."
   .tagline {
     line-height: 1;
     text-transform: lowercase;
   }
 
+  // Call to action buttons below tagline
   .button {
     position: static;
     border: 0;
@@ -50,6 +60,7 @@ $hh: 'homepage-hero';
   }
 }
 
+// Something eventually...
 .#{$hh}-pictures {
   @include at-breakpoint(emCalc(768px) 12) {
     @include span-columns(6);

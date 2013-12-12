@@ -1,5 +1,11 @@
+/*
+  HEADER
+  Styles for header found at the top of every page.
+*/
+
 $h: 'header';
 
+// Outer container
 .#{$h} {
   background: #444;
   padding: {
@@ -7,6 +13,7 @@ $h: 'header';
     bottom: 0.6em;
   }
 
+  // Pad it out on bigger screens
   @include at-breakpoint($medium) {
     padding: {
       top: 0.8em;
@@ -14,6 +21,7 @@ $h: 'header';
     }
   }
 
+  // My name
   .logo {
     display: inline-block;
     color: white;
@@ -23,10 +31,12 @@ $h: 'header';
       bottom: 0;
     }
   }
+  // The text after my name
   .logo-after {
     display: none;
     color: #ccc;
 
+    // Only show on medium screens and up
     @include at-breakpoint($small) {
       display: inline-block;
     }
@@ -37,11 +47,13 @@ $h: 'header';
   }
 }
 
+// Inner container for header
 .#{$h}-inner {
   @include container;
   position: relative;
 }
 
+// Email and Twitter links
 .#{$h}-contact {
   display: block;
   padding: {
@@ -58,6 +70,7 @@ $h: 'header';
       color: #ccc;
     }
 
+    // Icon
     &::before {
       margin-right: 0.4em;
       @include mod(2);
@@ -66,6 +79,7 @@ $h: 'header';
     }
   }
 
+  // Shift links to the far right side of the bar
   @include at-breakpoint($medium) {
     position: absolute;
     top: 0.35em;

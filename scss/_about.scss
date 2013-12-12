@@ -1,5 +1,11 @@
+/*
+  ABOUT
+  Styles for the about section at the bottom of the front page.
+*/
+
 $a: 'about';
 
+// Container
 .#{$a} {
   @include clearfix;
 
@@ -10,6 +16,7 @@ $a: 'about';
   }
 }
 
+// Photo of me
 .#{$a}-photo {
   margin-bottom: 1em;
 
@@ -27,6 +34,7 @@ $a: 'about';
   }
 }
 
+// Responsive adjustments: switch to a 2-column layout
 @include at-breakpoint($small) {
   .#{$a}-photo {
     @include span-columns(3);
@@ -36,7 +44,6 @@ $a: 'about';
     @include omega;
   }
 }
-
 @include at-breakpoint($large) {
   .#{$a} {
     p {
@@ -54,6 +61,7 @@ $a: 'about';
   }
 }
 
+// Link to email me
 .#{$a}-email-link {
   @include mod(4);
   font-weight: 600;
@@ -65,11 +73,13 @@ $a: 'about';
     line-height: 1.5;
   }
 
+  // Put an icon before it
   &::before {
     float: left;
     line-height: 2.6;
     margin-right: 0.5em;
 
+    // But only on medium-ish screens
     display: none;
     @include at-breakpoint($small) {
       display: inline;

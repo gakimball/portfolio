@@ -1,11 +1,17 @@
+/*
+  LAYOUT
+  Grid and breakpoint settings.
+*/
+
+// box-sizing: border-box is beautiful
 @include border-box-sizing;
 
+// Susy grid settings
 $container-width: emCalc(1000px);
 $gutter-width: emCalc(30px);
 $total-columns: 12;
 
-// Breakpoints
-
+// Responsive breakpoints
 $small:  600px 12;
 $medium: 768px 12;
 $large:  800px 12;

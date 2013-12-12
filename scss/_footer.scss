@@ -1,9 +1,16 @@
+/*
+  FOOTER
+  Styles for footer found at the bottom of every page.
+*/
+
 $bottom-border-height: 8px;
 
+// Run a border across the bottom of the page
 body {
   border-bottom: $bottom-border-height solid #333;
 }
 
+// Container
 .footer {
   @include container;
 
@@ -14,6 +21,7 @@ body {
   position: relative;
   color: #666;
 
+  // Footer text is tiny
   p {
     @include mod(-1);
     font-weight: 600;
@@ -23,7 +31,6 @@ body {
   }
   a {
     color: #000;
-
     &:hover {
       color: #000;
       text-decoration: underline;
@@ -34,6 +41,7 @@ body {
   $default-width: 30px;
   $large-width: 100px;
 
+  // By default the colors are lined up together
   &::before, &::after {
     display: block;
     position: absolute;
@@ -52,6 +60,7 @@ body {
       $default-width * 4 0 0 #666;
   }
 
+  // On medium screens and up, the bars separate into primary colors and grays
   @include at-breakpoint($small) {
     &::before, &::after {
       width: $large-width;

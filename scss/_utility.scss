@@ -1,3 +1,10 @@
+/*
+  UTILITY FUNCTIONS
+  Helpful Sass functions and mixins.
+*/
+
+// The old standby, Nicholas Gallagher's micro clearfix
+// http://nicolasgallagher.com/micro-clearfix-hack/
 @mixin clearfix {
   &:before,
   &:after {
@@ -12,12 +19,14 @@
   }
 }
 
+// Convert a pixel value to an em value using a 16px default base
+// This is sort of a ghetto version of what front-end frameworks use
 @function emCalc($n, $base: 16px) {
   @return $n / $base * 1em;
 }
 
-@mixin media($width) {
-  @media screen and (min-width: emCalc($width)) {
-    @content;
-  }
-}
+// @mixin media($width) {
+//   @media screen and (min-width: emCalc($width)) {
+//     @content;
+//   }
+// }

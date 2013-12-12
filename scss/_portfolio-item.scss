@@ -1,9 +1,25 @@
+/*
+  PORTFOLIO ITEM
+  List of work samples found on the front page.
+*/
+
+// Container for this section
+.portfolio {
+  margin-bottom: 2em;
+
+  @include at-breakpoint($medium) {
+    margin-bottom: 4em;
+  }
+}
+
 $pi: 'portfolio-item';
 
+// Item container
 .#{$pi} {
   @include clearfix;
   margin-top: 3.5em;
 
+  // Divider below item
   &:not(:last-child)::after {
     display: block;
     position: static;
@@ -20,6 +36,7 @@ $pi: 'portfolio-item';
   }
 }
 
+// Item thumbnail
 .#{$pi}-thumb {
   margin-bottom: 1em;
   @include at-breakpoint(emCalc(768px)) {
@@ -32,6 +49,7 @@ $pi: 'portfolio-item';
   }
 }
 
+// Responsive adjustments: switch to a 2-column layout
 @include at-breakpoint($small) {
   .#{$pi}-content {
     @include span-columns(7);
@@ -48,13 +66,5 @@ $pi: 'portfolio-item';
   }
   .#{$pi}-thumb {
     @include span-columns(6);
-  }
-}
-
-.portfolio {
-  margin-bottom: 2em;
-
-  @include at-breakpoint($medium) {
-    margin-bottom: 4em;
   }
 }

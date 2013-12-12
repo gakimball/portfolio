@@ -1,5 +1,11 @@
+/*
+  EXTERNAL LINKS
+  Series of panes above the footer with Twitter, Last.fm, and GitHub links.
+*/
+
 $el: 'external-links';
 
+// Container
 .#{$el} {
   @include container;
 
@@ -8,12 +14,14 @@ $el: 'external-links';
   }
 }
 
+// Link pane
 .#{$el}-item {
   @include at-breakpoint($small) {
     @include span-columns(4);
     @include nth-omega;
   }
 
+  // The section title becomes an icon
   h3 {
     @include mod(3);
     text-align: center;
@@ -22,12 +30,14 @@ $el: 'external-links';
     line-height: 1.75;
   }
 
+  // Explanation text above content, e.g., "Last Tweet"
   .explanation {
     font-style: italic;
     margin-bottom: 0.25em;
     font-weight: 300;
   }
 
+  // Link below content
   .link {
     margin-top: -0.25em;
 
@@ -36,6 +46,7 @@ $el: 'external-links';
       &:hover {
         color: lighten($secondary-color, 15%);
       }
+      // Put a right-facing arrow after it
       &::after {
         content: ' \2192';
         font-weight: 700;

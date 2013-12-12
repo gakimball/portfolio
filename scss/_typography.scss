@@ -1,13 +1,32 @@
+/*
+  TYPOGRAPHY
+  Type sizes, weights, and spacing site-wide.
+  Eventually every font-size declaration should end up here.
+*/
+
+// Normalize font size, use Source Sans everywhere, antialias where possible
 body {
   font-size: 100%;
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
 
+  // Custom text selection color
   &::-moz-selection, &::selection {
     background: rgba($secondary-color, 0.999);
   }
 }
 
+/*
+  Responsive modular scale function
+
+  Given position $n on a modular scale, return two font-size declarations
+  for two breakpoints.
+  On smaller screens the modular scale's interval is a perfect fourth;
+  on larger screens, the scale is expanded by switching to a perfect
+  fifth.
+
+  TODO: Add option to override $n between breakpoints by providing two values
+*/
 @mixin mod($n) {
   font-size: ms($n, 16px 100px, fourth());
 
@@ -16,6 +35,7 @@ body {
   }
 }
 
+// Basic type reset
 h1, h2, h3, h4, h5, h6, p, ul, li {
   margin-bottom: 1rem;
 }
@@ -31,6 +51,10 @@ em, i {
 strong, b {
   font-weight: 600;
 }
+
+/*
+  Site-wide font sizes
+*/
 
 .header {
   .logo {
@@ -87,6 +111,10 @@ h3 {
 .button {
   @include mod(1);
 }
+
+/*
+  Links
+*/
 
 a {
   text-decoration: none;
