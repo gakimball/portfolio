@@ -12,13 +12,11 @@
 @import "button";
 
 @import "header";
-@import "external-links";
 @import "footer";
 
 @import "homepage-hero";
 @import "portfolio-item";
 @import "about";
+@import "external-links";
 
-.main {
-  @include container;
-}
+@import "case-study";

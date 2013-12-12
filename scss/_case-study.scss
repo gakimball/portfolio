@@ -1,0 +1,78 @@
+/*
+  CASE STUDY
+  A case study is an interior page detailing the design process of a project.
+*/
+
+$cs: 'case-study';
+
+.#{$cs}-header {
+  padding: $gutter-width / 4 $gutter-width / 2;
+  background: $primary-color;
+  margin-bottom: 1em;
+
+  @include at-breakpoint($medium) {
+    margin-bottom: 2em;
+    padding: $gutter-width / 2;
+  }
+
+  h2 {
+    @include mod(8);
+    font-weight: 100;
+    text-align: center;
+    line-height: 1.1;
+    color: #fff;
+
+    span {
+      display: block;
+      margin-top: 0.5em;
+      font-size: 0.29em;
+      font-weight: 400;
+      font-style: italic;
+    }
+  }
+}
+
+.#{$cs}-body {
+  @include container;
+
+  .thumb {
+    display: block;
+    border: 1px solid #ccc;
+    margin: 0 auto 1em auto;
+    width: 100%;
+    max-width: 500px;
+
+    @include at-breakpoint($small) {
+      max-width: 700px;
+    }
+    @include at-breakpoint($large) {
+      max-width: 900px;
+    }
+
+    @include at-breakpoint($medium) {
+      margin: {
+        top: 1em;
+        bottom: 2em;
+      }
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  h3, h4, p, ul, ol {
+    @include at-breakpoint($small) {
+      @include span-columns(10);
+      @include push(1);
+    }
+    @include at-breakpoint($large) {
+      @include span-columns(8);
+      @include push(2);
+    }
+  }
+
+  p, ul {
+    @include mod(1);
+  }
+}
