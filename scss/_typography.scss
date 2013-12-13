@@ -31,7 +31,7 @@ body {
   font-size: ms($n, 16px 100px, fourth());
 
   @include at-breakpoint($medium) {
-    font-size: ms($n, 16px 100px, fifth())
+    font-size: ms($n, 16px 100px, fifth());
   }
 }
 
