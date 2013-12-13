@@ -1,5 +1,6 @@
 .DS_Store
 vendor
+node_modules
 .env
 .sass-cache
 css
