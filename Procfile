@@ -1,2 +1,2 @@
 web:  php -S me.dev:8000
-sass: compass watch .
+sass: bundle exec compass watch .
