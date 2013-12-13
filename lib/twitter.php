@@ -1,5 +1,7 @@
 <?php
 
+date_default_timezone_set('America/Indiana/Indianapolis');
+
 function getTweet() {
   $connection = new TwitterOAuth(getenv('TWITTER_CONSUMER_KEY'), getenv('TWITTER_CONSUMER_SECRET'), getenv('TWITTER_OAUTH_TOKEN'), getenv('TWITTER_OAUTH_TOKEN_SECRET'));
   $connection->host = "https://api.twitter.com/1.1/";
