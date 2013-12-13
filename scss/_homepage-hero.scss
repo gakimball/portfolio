@@ -27,11 +27,16 @@ $hh: 'homepage-hero';
 // Inner container
 .#{$hh}-inner {
   @include container;
+  position: relative;
 }
 
 // Hero content
 .#{$hh}-content {
-  @include at-breakpoint(emCalc(768px) 12) {
+  @include at-breakpoint($small) {
+    @include span-columns(7);
+    @include isolate(6);
+  }
+  @include at-breakpoint($large) {
     @include span-columns(6);
     @include isolate(7);
   }
@@ -62,8 +67,61 @@ $hh: 'homepage-hero';
 
 // Something eventually...
 .#{$hh}-pictures {
-  @include at-breakpoint(emCalc(768px) 12) {
-    @include span-columns(6);
-    @include isolate(1);
+  .pictures > div {
+    width: 32%;
+    max-width: 125px;
+  }
+
+  @include at-breakpoint($small) {
+    @include span-columns(5);
+
+    .pictures {
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      left: 22%;
+      top: 50%;
+      @include translate(-50px, -50px, 0);
+    }
+
+    img {
+      width: 100%;
+    }
+
+    .pictures > div {
+      width: 100%;
+      max-width: none;
+      display: block;
+      position: absolute;
+    }
+
+    .image-1 {
+      @include translateY(-75px);
+    }
+    .image-2 {
+      @include translate(-75px, 75px, 0);
+    }
+    .image-3 {
+      @include translate(75px, 75px, 0);
+    }
+  }
+
+  @include at-breakpoint($large) {
+    .pictures {
+      left: 25%;
+      width: 200px;
+      height: 200px;
+      @include translate(-100px, -100px, 0);
+    }
+
+    .image-1 {
+      @include translateY(-125px);
+    }
+    .image-2 {
+      @include translate(-125px, 125px, 0);
+    }
+    .image-3 {
+      @include translate(125px, 125px, 0);
+    }
   }
 }

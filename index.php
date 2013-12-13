@@ -14,6 +14,17 @@
       <a href="" class="button">Contact</a>
     </div>
     <div class="homepage-hero-pictures">
+      <div class="pictures">
+        <div class="image-1">
+          <img src="http://placehold.it/100x100" alt="">
+        </div>
+        <div class="image-2">
+          <img src="http://placehold.it/100x100" alt="">
+        </div>
+        <div class="image-3">
+          <img src="http://placehold.it/100x100" alt="">
+        </div>
+      </div>
     </div>
   </div>
 </div>
