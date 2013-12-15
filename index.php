@@ -14,16 +14,11 @@
       <a href="" class="button">Contact</a>
     </div>
     <div class="homepage-hero-pictures">
-      <div class="pictures">
-        <div class="image-1">
-          <img src="http://placehold.it/100x100" alt="">
-        </div>
-        <div class="image-2">
-          <img src="http://placehold.it/100x100" alt="">
-        </div>
-        <div class="image-3">
-          <img src="http://placehold.it/100x100" alt="">
-        </div>
+      <div class="icon-container">
+        <img src="img/icons/design.svg" alt="Design" class="icon-1">
+        <img src="img/icons/pizza.svg" alt="Pizza" class="icon-2">
+        <img src="img/icons/cat.svg" alt="Cats" class="icon-3">
+        <img src="img/icons/design.svg" alt="Design" class="icon-4">
       </div>
     </div>
   </div>
@@ -102,33 +97,5 @@
   </section>
 
 </section>
-
-<script>
-  function shuffle(array) {
-    var currentIndex = array.length
-    , temporaryValue
-    , randomIndex
-    ;
-    while (0 !== currentIndex) {
-      randomIndex = Math.floor(Math.random() * currentIndex);
-      currentIndex -= 1;
-      temporaryValue = array[currentIndex];
-      array[currentIndex] = array[randomIndex];
-      array[randomIndex] = temporaryValue;
-    }
-    return array;
-  }
-
-  (function(){
-    var words = ['affordance', 'accessibility', 'responsive design', 'content', 'visual design', 'user experience', 'crust', 'sauce', 'cheese', 'meats', 'vegetables', 'pepperoni', 'sausage', 'bacon', 'fur', 'ears', 'tail', 'paws'];
-    wordList = shuffle(words);
-
-    for (var i = 0; i < words.length; i++) {
-      var elem = document.createElement('span');
-      elem.text = wordList[i];
-      console.log(elem);
-    }
-  })();
-</script>
 
 <? include 'includes/footer.php'; ?>

@@ -1,8 +1,11 @@
 @import "compass/reset";
 @import "compass/css3";
 @import "compass/css3/user-interface";
+@import "compass/css3/shared";
 @import "susy";
 @import "modular-scale";
+
+@import "animation";
 
 @import "utility";
 @import "layout";
