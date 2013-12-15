@@ -37,23 +37,6 @@
     <p></p>
   </footer>
 
-  <script>
-    (function(){
-      var linkBoxes = document.querySelectorAll('.external-links-item');
-      var tallest = 0;
-      // Find the highest box
-      for (var i = 0; i < linkBoxes.length; i++) {
-        if (linkBoxes[i].clientHeight > tallest) {
-          tallest = linkBoxes[i].clientHeight;
-        }
-      }
-      // Set every box to that height
-      for (var i = 0; i < linkBoxes.length; i++) {
-        linkBoxes[i].style.height = tallest;
-      }
-    })();
-  </script>
-
 </body>
 
 </html>
