@@ -17,7 +17,7 @@ $pi: 'portfolio-item';
 // Item container
 .#{$pi} {
   @include clearfix;
-  margin-top: 3.5em;
+  margin-top: 1.5em;
 
   // Divider below item
   &:not(:last-child)::after {
@@ -25,9 +25,17 @@ $pi: 'portfolio-item';
     position: static;
     content: '';
     width: 60%;
-    height: 3.5em;
+    height: 1.5em;
     border-bottom: 1px solid #ccc;
     margin: 0 auto;
+  }
+
+  @include at-breakpoint($medium) {
+    margin-top: 4em;
+
+    &:not(:last-child)::after {
+      height: 3.5em;
+    }    
   }
 
   .subtitle {

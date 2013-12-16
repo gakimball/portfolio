@@ -141,7 +141,7 @@ $hh: 'homepage-hero';
   }
 
   @include at-breakpoint($small) {
-    $animation-length: 6s;
+    $animation-length: 5s;
 
     position: relative;
     @include transform-style(preserve-3d);

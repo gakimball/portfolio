@@ -3,11 +3,6 @@
   Grid and breakpoint settings.
 */
 
-// Main content container
-.main {
-  @include container;
-}
-
 // box-sizing: border-box is beautiful
 @include border-box-sizing;
 
@@ -20,3 +15,8 @@ $total-columns: 12;
 $small:  600px 12;
 $medium: 768px 12;
 $large:  800px 12;
+
+// Main content container
+.main {
+  @include container;
+}
