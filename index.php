@@ -14,12 +14,15 @@
       <a href="" class="button">Contact</a>
     </div>
     <div class="homepage-hero-pictures">
-      <div class="icon-container">
+      <!-- <div class="icon-container">
         <img src="img/icons/design.svg" alt="Design" class="icon-1">
         <img src="img/icons/pizza.svg" alt="Pizza" class="icon-2">
         <img src="img/icons/cat.svg" alt="Cats" class="icon-3">
         <img src="img/icons/design.svg" alt="Design" class="icon-4">
-      </div>
+      </div> -->
+      <img src="img/icons/design-sketch.png" style="width: 100%;" alt="">
+      <img src="img/icons/pizza-sketch.png" style="width: 100%;" alt="">
+      <img src="img/icons/cat-sketch.png" style="width: 100%;" alt="">
     </div>
   </div>
 </div>
