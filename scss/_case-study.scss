@@ -58,7 +58,7 @@ $cs: 'case-study';
     }
   }
 
-  h3, h4, p, ul, ol {
+  h3, h4, p, ul, ol, pre {
     @include at-breakpoint($small) {
       @include span-columns(10);
       @include push(1);
