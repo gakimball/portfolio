@@ -11,7 +11,7 @@
       <p class="tagline-after">are all I think about.</p>
 
       <a href="" class="button">Portfolio</a>
-      <a href="" class="button">Contact</a>
+      <a href="" class="button" data-resume-open>Resume</a>
     </div>
     <div class="homepage-hero-pictures">
       <!-- <div class="icon-container">
@@ -90,9 +90,11 @@
     </div>
 
     <div class="about-bio">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, ipsum, numquam, consectetur itaque eligendi maxime aliquam aut tempora accusamus doloremque eaque saepe! Minus, labore deleniti culpa laudantium voluptatum corrupti perspiciatis.</p>
+      <p>My name is <i>Geoff Kimball</i>, and I'm a soon-to-be-graduating senior at Ball State University in Muncie, IN. At my current job at BSU's Emerging Technologies department, I contribute to the design and development of responsive websites, desktop and mobile web apps, and native apps. I'm interested in the ways people incorporate technology into their lives. My ambition is to work on products and services that affect millions of people.</p>
 
-      <p><em>Hey, I'm looking for a full-time position!</em></p>
+      <p>I'm a certified archmage in CSS; I believe pencil (or Sharpie) and paper are the best tools to start a design project with; I know the semantic difference between <code>&lt;i&gt;</code> and <code>&lt;em&gt;</code>, and what <code>vertical-align</code> is actually for; I appreciate flat design but I love a well-placed box shadow; I like Mario, but what I love most are cats.</p>
+
+      <p><a data-resume-open>Here's my resume again.</a> <em>Hey, I'm looking for a full-time position!</em></p>
 
       <a href="mailto:gakimball@bsu.edu" class="about-email-link ss-mail">
         <span>email me</span>
@@ -102,5 +104,18 @@
   </section>
 
 </section>
+
+<div class="resume-modal" id="modal" data-resume-modal>
+  <div class="resume-modal-inner">
+    <h2>Resume</h2>
+    <div class="buttons">
+      <a class="button">Download</a>
+      <a class="button" data-resume-close>Close</a>
+    </div>
+    <a href="img/resume.jpg">
+      <img class="resume" src="img/resume.jpg" alt="Geoff Kimball's resume">
+    </a>
+  </div>
+</div>
 
 <? include 'includes/footer.php'; ?>

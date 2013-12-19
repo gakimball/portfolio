@@ -52,16 +52,7 @@ $hh: 'homepage-hero';
 
   // Call to action buttons below tagline
   .button {
-    position: static;
-    border: 0;
-    border-radius: 8px;
-    background: white;
-
-    &, &:hover {
-      padding: 0.5em 0.8em;
-    }
-    &:hover {
-    }
+    @include rounded-button;
   }
 }
 

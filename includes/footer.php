@@ -37,6 +37,9 @@
     <p></p>
   </footer>
 
+  <script src="js/src/zepto.js"></script>
+  <script src="js/src/script.js"></script>
+
 </body>
 
 </html>

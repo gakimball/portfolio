@@ -26,10 +26,20 @@
   &:hover {
     color: lighten($primary-color, 25%);
     border-bottom-color: lighten($primary-color, 25%);
-    // top: -0.25em;
-    // padding: {
-    //   top: 0.25em;
-    //   bottom: 0.75em;
-    // }
+    cursor: pointer;
+  }
+}
+
+// Mixin to switch to a more standard-looking button
+@mixin rounded-button {
+  position: static;
+  border: 0;
+  border-radius: 8px;
+  background: white;
+
+  &, &:hover {
+    padding: 0.3em 0.8em;
+  }
+  &:hover {
   }
 }

@@ -1,0 +1,113 @@
+/*
+  RESUME MODAL
+  Modal showing my resume, with a download link to the print-quality version.
+*/
+
+$rm: 'resume-modal';
+
+// Modal container
+.#{$rm} {
+  background: rgba(#000, 0.75);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+
+  h2 {
+    color: white;
+    cursor: default;
+  }
+  .button {
+    @include rounded-button;
+
+    &:last-child {
+      color: black;
+      &:hover {
+        color: lighten(black, 50%);
+      }
+    }
+  }
+  .resume {
+    width: 100%;
+  }
+
+  @include at-breakpoint($small) {
+    h2 {
+      float: left;
+    }
+    .buttons {
+      margin-top: 0.5em;
+      float: right;
+    }
+    .button {
+      margin: 0 0 0 1rem;
+    }
+    .resume {
+      clear: both;
+    }
+  }
+
+  /*
+    Transitions when modal is activated
+  */
+
+  // Hidden state
+  top: 1000%;
+  opacity: 0;
+  bottom: default;
+
+  h2, .buttons {
+    position: relative;
+    top: -5em;
+  }
+  .resume {
+    opacity: 0;
+    position: relative;
+    top: 10em;
+  }
+
+  // Visible state
+  &.is-open {
+    opacity: 1;
+    top: 0;
+    bottom: 0;
+
+    h2, .buttons {
+      top: 0;
+    }
+    .resume {
+      top: 0;
+      opacity: 1;
+    }
+  }
+
+  // Transitions
+  &, &.is-open {
+    h2, .buttons {
+      @include transition-property(top);
+      @include transition-duration(0.4s);
+      @include transition-timing-function(ease-out);
+    }
+    .resume {
+      @include transition-property(top opacity);
+      @include transition-duration(0.4s);
+      @include transition-timing-function(ease-out);
+    }
+  }
+}
+
+// Inner container to constrain content
+.#{$rm}-inner {
+  @include container;
+  max-width: emCalc(900px);
+  padding: 1em;
+}
+
+.modal-open {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
