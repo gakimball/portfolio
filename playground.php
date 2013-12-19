@@ -25,6 +25,18 @@
   <p>For some pages this was a big challenge. One of the most interesting pages to try and make mobile friendly was <a href="">Shadow Experiments</a>, which includes a number of complex animated elements. It didn't transfer flawlessly, but at least you can read about the fun of CSS shadow effects on your phone.</p>
 
   <p>It was a lot of work, but it was also an interesting challenge. I feel very strongly about the importance of the responsive web, so trying to adapt old content to new standards was actually pretty fun.</p>
+
+  <h3>Wrangle</h3>
+
+  <p>I also got the opportunity to contribute a piece of content to the Playground to coincide with its relaunch. It's an experimental jQuery plugin called <a href="#">Wrangle</a>.</p>
+
+  <img src="img/work/playground/02.jpg" alt="Screenshot of the Playground page for Wrangle" class="thumb">
+
+  <p>During a weekly design meeting at ZURB, we did an exercise where we tried to come up with unorthodox ways of organizing photos. One of the design leads had the idea to perform multiple selections by dragging your finger or mouse, as opposed to clicking or tapping items. Later that day I heard two of my co-workers musing that that idea would make for an interesting Playground piece. So that night I made a really basic prototype to show people. A few weeks later we released it to the public as a tech demo.</p>
+
+  <p>Making the plugin was a complex process, due in no small part to the need to make it compatible with touch and mouse and make it as cross-platform as possible. Juggling a dozen different evens handled slightly differently on every platform is hard! I wrote about the process of making the plugin on its <a href="">official page</a>.</p>
+
+  <p>The plugin launched alongside a <a href="">demo</a> demonstrating its use "in the wild". I was reminded of an important principle every designer needs to keep in mind. To turn on the plugin in this demo you have to press a button (this keeps the action of selecting from conflicting with, say, scrolling the device with your finger). The demo is a photo gallery with a bar of actions at the bottom of the page, including the start button. After it launched I got an email from my boss saying the demo wasn't working. What? I had tested it myself. Some of my co-workers also told me they had trouble making the demo work. The reason was, I hadn't instructed the user that the plugin was switched on and off by a button, and that button was at the bottom of the screen where people weren't seeing it. I quickly amended this by moving the action bar to the top of the page and changing the wording of the button from "select" to "start demo". It's always important to remember that nothing is as obvious as you may think it is. Someone's always going to miss this button here or that important bit of text there, and you have to keep that in mind.</p>
 </div>
 
 <? include 'includes/footer.php'; ?>
