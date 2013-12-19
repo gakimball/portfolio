@@ -90,11 +90,11 @@
     </div>
 
     <div class="about-bio">
-      <p>My name is <i>Geoff Kimball</i>, and I'm a soon-to-be-graduating senior at Ball State University in Muncie, IN. At my current job at BSU's Emerging Technologies department, I contribute to the design and development of responsive websites, desktop and mobile web apps, and native apps. I'm interested in the ways people incorporate technology into their lives. My ambition is to work on products and services that affect millions of people.</p>
+      <p>My name is <i>Geoff Kimball</i>, and I'm a soon-to-be-graduating senior at Ball State University in Muncie, IN. At my current job at BSU's Emerging Technologies department, I contribute to the design and development of responsive websites, desktop and mobile web apps, and native apps. I'm interested in the ways we incorporate technology into our lives. My ambition is to work on products and services that affect millions of people.</p>
 
       <p>I'm a certified archmage in CSS; I believe pencil (or Sharpie) and paper are the best tools to start a design project with; I know the semantic difference between <code>&lt;i&gt;</code> and <code>&lt;em&gt;</code>, and what <code>vertical-align</code> is actually for; I appreciate flat design but I love a well-placed box shadow; I like Mario, but what I love most are cats.</p>
 
-      <p><a data-resume-open>Here's my resume again.</a> <em>Hey, I'm looking for a full-time position!</em></p>
+      <p><a href="#" data-resume-open>Here's my resume again.</a> <em>Hey, I'm looking for a full-time position!</em></p>
 
       <a href="mailto:gakimball@bsu.edu" class="about-email-link ss-mail">
         <span>email me</span>
