@@ -20,9 +20,11 @@
         <img src="img/icons/cat.svg" alt="Cats" class="icon-3">
         <img src="img/icons/design.svg" alt="Design" class="icon-4">
       </div> -->
-      <img src="img/icons/design-sketch.png" style="width: 100%;" alt="">
-      <img src="img/icons/pizza-sketch.png" style="width: 100%;" alt="">
-      <img src="img/icons/cat-sketch.png" style="width: 100%;" alt="">
+      <div class="sketch-container">
+        <img src="img/icons/design-sketch.png" class="sketch-1" alt="">
+        <img src="img/icons/pizza-sketch.png" class="sketch-2" alt="">
+        <img src="img/icons/cat-sketch.png" class="sketch-3" alt="">
+      </div>
     </div>
   </div>
 </div>

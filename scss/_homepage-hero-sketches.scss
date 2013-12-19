@@ -1,0 +1,61 @@
+@include keyframes(flip-up) {
+  0% {
+    opacity: 0;
+    @include rotateX(90deg);
+  }
+  10% {
+    opacity: 1;
+    @include rotateX(0deg);
+  }
+  23% {
+    @include translateY(0px);
+    opacity: 1;
+  }
+  33%, 100% {
+    opacity: 0;
+    @include translateY(50px);
+  }
+}
+
+.sketch-container {
+  width: 100%;
+
+  img {
+    width: 28%;
+    margin-right: 4%;
+  }
+
+  @include at-breakpoint($small) {
+    $animation-length: 5s;
+
+    @include perspective(800px);
+    position: relative;
+
+    img {
+      @include transform-origin(50%, 100%, false);
+      width: 100%;
+      margin: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .sketch-1 {
+      @include experimental(
+        'animation',
+        flip-up $animation-length ease-out 0s infinite normal both
+      );
+    }
+    .sketch-2 {
+      @include experimental(
+        'animation',
+        flip-up $animation-length ease-out ($animation-length / 3) infinite normal both
+      );
+    }
+    .sketch-3 {
+      @include experimental(
+        'animation',
+        flip-up $animation-length ease-out ($animation-length / 3 * 2) infinite normal both
+      );
+    }
+  }
+}

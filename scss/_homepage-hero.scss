@@ -68,7 +68,7 @@ $hh: 'homepage-hero';
 .#{$hh}-pictures {
   @include at-breakpoint($small) {
     @include span-columns(5);
-    @include perspective(800px);
+    // @include perspective(800px);
   }
 }
 
