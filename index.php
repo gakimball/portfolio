@@ -34,7 +34,7 @@
   <section class="portfolio">
     
     <h2>Portfolio</h2>
-    <p class="subtitle">My work is people-focused, content-oriented, and responsively-minded.</p>
+    <p class="subtitle">My work is people-oriented, content-focused, and responsively-minded.</p>
 
     <section class="portfolio-item">
       <div class="portfolio-item-thumb">
@@ -76,7 +76,7 @@
 
         <p>I wrote the markup and stylesheets for an admin interface for Ball State University’s rec center employees and staff. I also provided some input on the layout and visual design.  A well-done responsive design was a key goal for this project.</p>
 
-        <a href="bsurec.php" class="button">Read case study &rarr;</a>
+        <a href="recreation.php" class="button">Read case study &rarr;</a>
      </div>
     </section>
 
@@ -92,9 +92,9 @@
     <div class="about-bio">
       <p>My name is <i>Geoff Kimball</i>, and I'm a soon-to-be-graduating senior at Ball State University in Muncie, IN. At my current job at BSU's Emerging Technologies department, I contribute to the design and development of responsive websites, desktop and mobile web apps, and native apps. I'm interested in the ways we incorporate technology into our lives. My ambition is to work on products and services that affect millions of people.</p>
 
-      <p>I'm a certified archmage in CSS; I believe pencil (or Sharpie) and paper are the best tools to start a design project with; I know the semantic difference between <code>&lt;i&gt;</code> and <code>&lt;em&gt;</code>, and what <code>vertical-align</code> is actually for; I appreciate flat design but I love a well-placed box shadow; I like Mario, but what I love most are cats.</p>
+      <p>I'm a certified archmage in CSS; I believe pencil (or Sharpie) and paper are the best tools to start a design project with; I know the semantic difference between <code>&lt;i&gt;</code> and <code>&lt;em&gt;</code>, and what <code>vertical-align</code> is actually for; I appreciate flat design but also enjoy a well-placed box shadow; I like Mario, but what I love most are cats.</p>
 
-      <p><a href="#" data-resume-open>Here's my resume again.</a> <em>Hey, I'm looking for a full-time position!</em></p>
+      <p><a href="#" data-resume-open>Here's my resume again.</a> <em>And hey, I'm looking for a full-time position!</em></p>
 
       <a href="mailto:gakimball@bsu.edu" class="about-email-link ss-mail">
         <span>email me</span>
