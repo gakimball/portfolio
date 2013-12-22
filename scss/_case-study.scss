@@ -73,6 +73,12 @@ $cs: 'case-study';
     @include mod(1);
   }
 
+  li {
+    list-style-type: disc;
+    list-style-position: inside;
+    padding-left: 1em;
+  }
+
   h3 {
     @include mod(4);
     margin-top: 1rem;

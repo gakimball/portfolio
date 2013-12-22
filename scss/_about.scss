@@ -27,6 +27,8 @@ $a: 'about';
     border-radius: 1000px;
     margin: 0 auto;
     max-width: 200px;
+    box-shadow:
+      0 0 0 0.5em $primary-color, 0 0 0 1em lighten($primary-color, 20%);
 
     @include at-breakpoint($small) {
       max-width: none;
