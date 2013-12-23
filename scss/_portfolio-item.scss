@@ -42,6 +42,15 @@ $pi: 'portfolio-item';
     font-style: italic;
     color: $secondary-color;
   }
+
+  .inception {
+    @include mod(2);
+    text-align: center;
+    
+    @include at-breakpoint($medium) {
+      font-weight: 300;
+    }
+  }
 }
 
 // Item thumbnail

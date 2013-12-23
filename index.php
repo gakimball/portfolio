@@ -80,6 +80,10 @@
      </div>
     </section>
 
+    <section class="portfolio-item">
+      <p class="inception">I also wrote about my process for designing this portfolio site. <a href="portfolio.php">Read all about it.</a></p>
+    </section>
+
   </section>
 
   <section class="about">
