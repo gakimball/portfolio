@@ -3,7 +3,7 @@
 $base = __DIR__.'/..';
 
 require $base.'/vendor/autoload.php';
-Dotenv::load($base);
+Dotenv::load($base.'/..');
 
 require $base.'/lib/twitter.php';
 require $base.'/lib/lastfm.php';
