@@ -47,7 +47,7 @@ $a: 'about';
 @include at-breakpoint($large) {
   .#{$a} {
     p {
-      @include mod(1);
+      @include rms(1);
       font-weight: 300;
     }
   }
@@ -63,7 +63,7 @@ $a: 'about';
 
 // Link to email me
 .#{$a}-email-link {
-  @include mod(4);
+  @include rms(4);
   font-weight: 600;
 
   span {

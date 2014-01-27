@@ -8,7 +8,6 @@
 
   position: relative;
   display: inline-block;
-  @include mod(1);
   font-weight: 600;
   text-decoration: none;
   padding: $padding;

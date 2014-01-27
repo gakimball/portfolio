@@ -35,14 +35,16 @@ body {
   }
 }
 
+@include set-scales(16px 100px, fourth(), $small-width augmented-fourth(), $large-width fifth());
+
 // Basic type reset
 h1, h2, h3, h4, h5, h6, p, ul, li, pre {
   margin-bottom: 1rem;
 }
 p, li {
-  line-height: 1.4;
+  line-height: fourth();
   @include at-breakpoint($medium) {
-    line-height: 1.5;
+    line-height: fifth();
   }
 }
 em, i {
@@ -50,6 +52,9 @@ em, i {
 }
 strong, b {
   font-weight: 600;
+}
+.button {
+  @include rms(1);
 }
 code {
   font-family: 'Source Code Pro', monospace;
@@ -69,58 +74,58 @@ code {
 
 .header {
   .logo {
-    @include mod(4);
+    @include rms(4);
     font-weight: 700;
   }
   .logo-after {
-    @include mod(3);
+    @include rms(3);
     font-weight: 100;
   }
 }
 .header-contact {
   a {
-    @include mod(2);
+    @include rms(2);
   }
 }
 
 .homepage-hero {
   .tagline {
-    @include mod(9);
+    @include rms(9);
     font-weight: 900;
   }
   .tagline-after {
-    @include mod(3);
+    @include rms(3);
     font-weight: 400;
   }
   .button {
-    @include mod(3);
+    @include rms(3);
   }
 }
 
 h2 {
-  @include mod(6);
+  @include rms(6);
   font-weight: 300;
 
   & + p.subtitle {
-    @include mod(3);
+    @include rms(3);
     font-weight: 300;
     margin-top: -0.5em;
   }
 }
 
 h3 {
-  @include mod(5);
+  @include rms(5);
   font-weight: 400;
 
   & + p.subtitle {
-    @include mod(1);
+    @include rms(1);
     font-weight: 400;
     margin-top: -0.5em;
   }
 }
 
 .button {
-  @include mod(1);
+  @include rms(1);
 }
 
 /*

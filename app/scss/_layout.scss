@@ -11,10 +11,14 @@ $container-width: emCalc(1000px);
 $gutter-width: emCalc(30px);
 $total-columns: 12;
 
+$small-width:  600px;
+$medium-width: 768px;
+$large-width:  800px;
+
 // Responsive breakpoints
-$small:  600px 12;
-$medium: 768px 12;
-$large:  800px 12;
+$small:  $small-width 12;
+$medium: $medium-width 12;
+$large:  $large-width 12;
 
 // Main content container
 .main {
