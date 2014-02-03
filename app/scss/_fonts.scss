@@ -18,7 +18,8 @@
 @font-face {
   font-family: "SSSocialRegular";
   src: url('../fonts/ss-social/ss-social-regular.eot');
-  src: url('../fonts/ss-social/ss-social-regular.eot?#iefix') format('embedded-opentype'),
+  src: local('あ'),
+       url('../fonts/ss-social/ss-social-regular.eot?#iefix') format('embedded-opentype'),
        url('../fonts/ss-social/ss-social-regular.woff') format('woff'),
        url('../fonts/ss-social/ss-social-regular.ttf')  format('truetype'),
        url('../fonts/ss-social/ss-social-regular.svg#SSSocialRegular') format('svg');

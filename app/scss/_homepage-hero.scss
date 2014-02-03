@@ -48,6 +48,11 @@ $hh: 'homepage-hero';
   .tagline {
     line-height: 1;
     text-transform: lowercase;
+    margin-bottom: 0;
+  }
+  // "...are all I think about."
+  .tagline-after {
+    margin-bottom: 1em;
   }
 
   // Call to action buttons below tagline

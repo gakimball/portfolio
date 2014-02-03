@@ -67,6 +67,12 @@ $pi: 'portfolio-item';
 }
 
 // Responsive adjustments: switch to a 2-column layout
+.#{$pi}-content {
+  // Title of work
+  h3 {
+    font-weight: 300;
+  }
+}
 @include at-breakpoint($small) {
   .#{$pi}-content {
     @include span-columns(7);
