@@ -28,7 +28,7 @@
 
   <p>So I went from there, fleshing out the visual style. Where it made sense I decided to use really thick fonts; I like the way chunky type looks. I also strayed away from the typical flat, rounded rectangle buttons common in flat design in lieu of something more non-standard. It's nothing earth-shattering, just me trying to be vaguely different where I can.</p>
 
-  <p>The hero unit took me a while to figure out. I liked the tagline, but I needed a visual component to go with it. I sketched a few ideas, and tried building a small number of them, but it took me a while to land on something I liked. The sketch idea appealed to me because I like to draw, and I've been sketching website designs for close to a decade, before I knew how to fully realize those ideas.</p>
+  <p>The hero unit took me a while to figure out. I liked the tagline, but I needed a visual component to go with it. I sketched a few ideas, and tried building a small number of them, but it took me a while to land on something I liked. Eventually I landed on actually showing sketches of the three concepts; this appealed to me because I like to draw, and I've been sketching website designs for close to a decade, which has made it a fundamental component of my process.</p>
 
   <h3>Sweating the details</h3>
 

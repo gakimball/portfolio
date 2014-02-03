@@ -13,6 +13,7 @@ function getTweet() {
   );
 
   $response = $connection->get("statuses/user_timeline", $params);
+
   $tweet = $response[0];
   return array(
     'text' => $tweet->text,
