@@ -2,7 +2,7 @@
     <h2>Links</h2>
     
     <section class="external-links-item">
-      <? // $tweet = getTweet(); ?>
+      <? $tweet = getTweet(); ?>
       <h3><i class="ss-icon">Twitter</i></h3>
       <p class="explanation">Last Tweet Tweet'd</p>
       <p><strong><?=$tweet['date'] ?>:</strong> <?=$tweet['text'] ?></p>
@@ -10,7 +10,7 @@
     </section>
 
     <section class="external-links-item">
-      <? // $track = getTrack(); ?>
+      <? $track = getTrack(); ?>
       <h3><i class="ss-icon">Lastfm</i></h3>
       <p class="explanation">Last song listened to</p>
       <p>
@@ -22,7 +22,7 @@
     </section>
 
     <section class="external-links-item">
-      <? // $commit = getCommit(); ?>
+      <? $commit = getCommit(); ?>
       <h3><i class="ss-icon">Octocat</i></h3>
       <p class="explanation">Last commit to this site</p>
       <p><strong><?=$commit['sha'] ?>:</strong> <?=$commit['message'] ?></p>
@@ -33,6 +33,7 @@
 
   <footer class="footer">
     <p>Etcetera etcetera Geoff Kimball.</p>
+    <p>The projects shown here are owned by their original creators, except for Polymath and Responsive Modular Scale.</p>
     <p>Web fonts: <a href="http://store1.adobe.com/cfusion/store/html/index.cfm?event=displayFontPackage&code=1959">Source Sans Pro</a> by Adobe, <a href="https://symbolset.com/icons/social-regular">Social Regular</a> by Symbolset</p>
     <p></p>
   </footer>
