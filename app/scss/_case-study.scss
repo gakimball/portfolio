@@ -37,7 +37,7 @@ $cs: 'case-study';
 
   .thumb {
     display: block;
-    border: 1px solid #ccc;
+    border: 1px solid #999;
     margin: 1em auto;
     width: 100%;
     max-width: 500px;
@@ -53,8 +53,34 @@ $cs: 'case-study';
       margin: 2em auto;
     }
 
-    img {
+    & + figcaption {
       width: 100%;
+      max-width: 500px;
+      padding: 0.75em 1em;
+      border: 1px solid #ccc;
+      border-top-width: 0;
+      text-align: center;
+      margin: -1em auto 1em auto;
+      font-style: italic;
+      position: relative;
+      font-weight: 300;
+
+      @include at-breakpoint($medium) {
+        border-color: #999;
+        border-top-width: 1px;
+        font-weight: normal;
+      }
+
+      &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        height: 17px;
+        width: 1px;
+        background: #999;
+        top: -17px;
+        left: 50%;
+      }
     }
   }
 

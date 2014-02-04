@@ -28,6 +28,7 @@ $el: 'external-links';
     color: $secondary-color;
     border-bottom: 1px solid $secondary-color;
     line-height: 1.75;
+    cursor: default;
   }
 
   // Explanation text above content, e.g., "Last Tweet"

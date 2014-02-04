@@ -10,10 +10,6 @@ body {
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
 
-  // Custom text selection color
-  &::-moz-selection, &::selection {
-    background: rgba($secondary-color, 0.999);
-  }
 }
 
 /*
