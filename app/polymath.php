@@ -12,7 +12,7 @@
 
   <p><i>Design is a collaborative, multidisciplinary effort. Although most of this design and all of the code is all me, I had input from my cohorts at work, collaborators on the Polymath project, and a handful of programmers who know their way around the web development world in ways I don't.</i></p>
 
-  <p>Polymath is a project I started with some of my friends last year. We started with an unusual premise: create a music site (more or less a label) where albums are released one track at a time, once a week. On top of that, rope in multiple artists and have them release on a schedule: one every Monday, one every Wednesday, and so on. I built a basic site with little planning in about 4 weeks, using the Django framework, and having never written a line of Python. But it worked out, and I went on to design a second version of the site, and now a third one which you see now.</p>
+  <p>Polymath is a project I started with some of my friends last year. We started with an unusual premise: create a music site (more or less a label) where albums are released one track at a time, once a week. On top of that, rope in multiple artists and have them release on a schedule: one every Monday, one every Wednesday, and so on. I built a basic site with little planning in about 4 weeks, using the Django framework, and having never written a line of Python. But it worked out, and I went on to design a second version of the site, and then a third, which was launched in November 2013.</p>
 
   <h3>The Site</h3>
 
@@ -33,6 +33,8 @@
   <h4>The Audio Player</h4>
 
   <p>One of the site's core features, there since the beginning, is the audio player fixed at the bottom of the page, which follows you around the site. Building a responsive audio player is a tricky challenge, from a design and technical perspective. Building an entire <em>site</em> full of clickable links that seamlessly load music into that player is an even trickier challenge.</p>
+
+  <p>I chose to build something from scratch so I would have a complete understanding of how it worked. However, I also suspected that there was no plugin out there that would meet my needs. Some day I'd like to develop the plugin further and open source it, but first I would have to make it (potentially) compatible with any API.</p>
 
   <h3>The Logo</h3>
 

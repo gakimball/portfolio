@@ -16,12 +16,12 @@
 
   <h3>The implementation</h3>
 
-  <p>We started by building out the various parts of the site as static pages. Amusingly, we used Dropbox so we could edit CSS at the same time, which somehow worked about 95% of the time. We were compiling our Sass and JavaScript with CodeKit. I don't use CodeKit as much as I used to since I've gained more familiarity with the command line. Although I haven't quite figured out Grunt, which you might call the command line version of CodeKit, I've stopped using CodeKit for projects. At the time however, it was a useful tool, especially since the other designer didn't have much experience in the command line, so having a GUI to compile assets was useful.</p>
+  <p>We started by building out the various parts of the site as static pages. Amusingly, we used Dropbox so we could edit CSS at the same time, which somehow worked about 95% of the time. We were compiling our Sass and JavaScript with <a href="http://incident57.com/codekit/">CodeKit</a>. I don't use CodeKit as I did then (over a year ago), since I've gained more familiarity with the command line. Although I haven't quite figured out more advanced build systems like Grunt, which you might call a command line equivalent of CodeKit, I've stopped using CodeKit for projects. At the time, however, having a visual tool to manage assets was useful, since the other designer didn't have much experience in the command line.</p>
 
-  <p>This project is mostly just a series of forms, which in theory shouldn't be too difficult. However, writing markup was initially problematic for these reasons:</p>
+  <p>This project was mostly just a series of forms, which in theory shouldn't be too difficult. However, writing markup was initially problematic for these reasons:</p>
 
   <ul>
-      <li>The design had small details like embossed borders, requiring the positioning of each element to be fine-tuned.</li>
+      <li>The design had small details like embossed borders, requiring the positioning of some elements to be fine-tuned.</li>
       <li>Every page section and form section was collapsable up to its title, which meant every container needed two inner containers (one for the title and one for the content), which bloated the markup.</li>
       <li>Some forms would create or destroy additional form elements, and this stretching of the design occasionally created visual bugs.</li>
   </ul>
