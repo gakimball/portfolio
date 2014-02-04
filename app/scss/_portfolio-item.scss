@@ -44,7 +44,7 @@ $pi: 'portfolio-item';
   }
 
   .inception {
-    @include mod(2);
+    @include rms(2);
     text-align: center;
     
     @include at-breakpoint($medium) {

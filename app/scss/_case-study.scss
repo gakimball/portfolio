@@ -16,7 +16,7 @@ $cs: 'case-study';
   }
 
   h2 {
-    @include mod(8);
+    @include rms(8);
     font-weight: 100;
     text-align: center;
     line-height: 1.1;
@@ -96,7 +96,7 @@ $cs: 'case-study';
   }
 
   p, ul {
-    @include mod(1);
+    @include rms(1);
   }
 
   li {
@@ -106,7 +106,7 @@ $cs: 'case-study';
   }
 
   h3 {
-    @include mod(4);
+    @include rms(4);
     margin-top: 1rem;
 
     @include at-breakpoint($medium) {
@@ -114,7 +114,7 @@ $cs: 'case-study';
     }
   }
   h4 {
-    @include mod(3);
+    @include rms(3);
     margin-top: 0.5rem;
     font-weight: 300;
 

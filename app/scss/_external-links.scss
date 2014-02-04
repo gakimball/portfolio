@@ -23,7 +23,7 @@ $el: 'external-links';
 
   // The section title becomes an icon
   h3 {
-    @include mod(3);
+    @include rms(3);
     text-align: center;
     color: $secondary-color;
     border-bottom: 1px solid $secondary-color;

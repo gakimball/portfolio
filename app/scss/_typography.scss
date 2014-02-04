@@ -12,25 +12,6 @@ body {
 
 }
 
-/*
-  Responsive modular scale function
-
-  Given position $n on a modular scale, return two font-size declarations
-  for two breakpoints.
-  On smaller screens the modular scale's interval is a perfect fourth;
-  on larger screens, the scale is expanded by switching to a perfect
-  fifth.
-
-  TODO: Add option to override $n between breakpoints by providing two values
-*/
-@mixin mod($n) {
-  font-size: ms($n, 16px 100px, fourth());
-
-  @include at-breakpoint($medium) {
-    font-size: ms($n, 16px 100px, fifth());
-  }
-}
-
 @include set-scales(16px 100px, fourth(), $small-width augmented-fourth(), $large-width fifth());
 
 // Basic type reset
