@@ -18,6 +18,7 @@
         <img src="img/icons/design-sketch.png" class="sketch-1" alt="">
         <img src="img/icons/pizza-sketch.png" class="sketch-2" alt="">
         <img src="img/icons/cat-sketch.png" class="sketch-3" alt="">
+        <img src="img/icons/doge-sketch.png" class="sketch-doge" alt="">
       </div>
     </div>
   </div>
@@ -28,7 +29,8 @@
   <section class="portfolio">
     
     <h2>Portfolio</h2>
-    <p class="subtitle">My work is people-oriented, content-focused, and responsively-minded.</p>
+    <!-- <p class="subtitle">My work is people-oriented, content-focused, and responsively-minded.</p> -->
+    <p class="subtitle">My work emphasizes people, content, and the responsive web.</p>
 
     <section class="portfolio-item">
       <div class="portfolio-item-thumb">
@@ -53,7 +55,7 @@
         <h3>ZURB Playground</h3>
         <p class="subtitle">web</p>
 
-        <p>I interned at product design firm ZURB this summer, where my main project was redesigning Playground, one of ZURB’s most popular properties which is host to various design resources and technical experiments.</p>
+        <p>I interned at product design firm ZURB this summer, where my main project was redesigning Playground, one of ZURB’s most popular properties, which is host to various design resources and technical experiments.</p>
 
         <a href="playground.php" class="button">Read case study &rarr;</a>
         <a href="http://zurb.com/playground" class="button" target="_blank">Visit site &rarr;</a>
@@ -83,7 +85,7 @@
         <h3>Polymath</h3>
         <p class="subtitle">web + logo</p>
 
-        <p>Polymath is a group of musicians, filmmakers, and writers based mostly in Muncie and Bloomington, Indiana, releasing their works online for free. I designed the logo and the website, and I wrote and maintain the server-side codebase as well.</p>
+        <p>Polymath is a group of musicians, filmmakers, and writers based mostly in Muncie and Bloomington, Indiana, releasing their works online for free. I designed the logo and the website, and I maintain the server-side codebase.</p>
 
         <a href="polymath.php" class="button" target="_blank">Read case study &rarr;</a>
         <a href="http://polymatharts.com" class="button" target="_blank">Visit site &rarr;</a>
@@ -114,16 +116,16 @@
     <h2>About me</h2>
 
     <div class="about-photo">
-      <img src="http://placehold.it/100x100" alt="Portrait of me.">
+      <img src="img/me.jpg" alt="Photo of me.">
     </div>
 
     <div class="about-bio">
-      <p>My name is <i>Geoff Kimball</i>, and I'm a soon-to-be-graduating senior at Ball State University in Muncie, IN. At my current job at BSU's Emerging Technologies department, I contribute to the design and development of responsive websites, desktop and mobile web apps, and native apps. Designing or coding, I just want to make awesome things for people. I'm interested in the ways we incorporate technology into our lives, and my ambition is to work on products and services that affect millions of people.</p>
+      <p>My name is <i>Geoff Kimball</i>, and I'm a soon-to-be-graduating senior at Ball State University in Muncie, IN. At my current job with BSU's Emerging Technologies department, I contribute to the design and development of websites, desktop and mobile web apps, and native apps. Designing or coding, I just want to make awesome things for people. I'm interested in the ways we incorporate technology into our lives, and my ambition is to work on products and services that affect millions of people.</p>
 
       <p><a href="#" data-resume-open>Here's my resume again.</a> <em>And hey, I'm looking for a full-time position!</em></p>
 
-      <a href="mailto:gakimball@bsu.edu" class="about-email-link ss-mail">
-        <span>email me</span>
+      <a href="mailto:gakimball@bsu.edu" class="about-email-link button ss-mail">
+        <!-- <span>email me</span> -->
         gakimball@bsu.edu
       </a>
     </div>

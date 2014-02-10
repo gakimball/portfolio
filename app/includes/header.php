@@ -18,7 +18,7 @@ require $base.'/lib/github.php';
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Geoff Kimball — web + mobile designer</title>
+  <title>Geoff Kimball – web + mobile designer</title>
 
   <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,300italic,400italic,600italic' rel='stylesheet' type='text/css'>
   <link rel="shortcut icon" href="img/favicon.ico">
