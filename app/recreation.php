@@ -42,7 +42,7 @@
     <figcaption>The opening hours UI.</figcaption>
   </figure>
 
-  <p>This project was also my first chance to really develop my responsive design chops. Thanks to Foundation most of the pages scaled down to an acceptable layout (once again, the app is mostly just forms, and most form controls scale pretty easily). </p>
+  <p>This project was also my first chance to really develop my responsive design chops. Thanks to Foundation most of the pages scaled down to an acceptable layout (once again, the app is mostly just forms, and most form controls scale pretty easily). Many page elements still required various fine-tuning for mobile, however. This project also would have perhaps benefitted from a mobile-first design process. This makes even more sense as the main device this app would be used on was the iPad.</p>
 
   <figure>
     <img src="img/work/recreation/04.jpg" alt="" class="thumb">
