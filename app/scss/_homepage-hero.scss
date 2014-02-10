@@ -18,7 +18,7 @@ $hh: 'homepage-hero';
   @include at-breakpoint(emCalc(768px)) {
     padding: {
       top: 4em;
-      bottom: 4em;
+      bottom: 4e steamm;
     }
     margin-bottom: 3em;
   }
@@ -61,113 +61,10 @@ $hh: 'homepage-hero';
   }
 }
 
+// Column container for sketches
 .#{$hh}-pictures {
   @include at-breakpoint($small) {
     @include span-columns(5);
     // @include perspective(800px);
-  }
-}
-
-@include keyframes(spin) {
-  // Icon 1 visible
-  0% {
-    @include rotateY(0deg);
-  }
-  33% {
-    @include rotateY(180deg);
-  }
-  66% {
-    @include rotateY(360deg);
-  }
-  100% {
-    @include rotateY(540deg);
-  }
-}
-
-@include keyframes(spin-helper-1) {
-  0% {
-    opacity: 1;
-    @include experimental('animation-timing-function', steps(2));
-  }
-  33%, 100% {
-    opacity: 0;
-  }
-}
-@include keyframes(spin-helper-3) {
-  0% {
-    opacity: 0;
-    @include experimental('animation-timing-function', steps(2));
-  }
-  33%, 99% {
-    opacity: 1;
-  }
-  100%  {
-    opacity: 0;
-  }
-}
-
-@include keyframes(spin-helper-2) {
-  33% {
-    opacity: 1;
-    @include experimental('animation-timing-function', steps(2));
-  }
-  66%, 100% {
-    opacity: 0;
-  }
-}
-@include keyframes(spin-helper-4) {
-  33% {
-    opacity: 0;
-    @include experimental('animation-timing-function', steps(2));
-  }
-  66%, 100% {
-    opacity: 1;
-  }
-}
-
-.icon-container {
-  width: 100%;
-
-  > img {
-    width: 26%;
-    margin-right: 5.75%;
-  }
-  .icon-4 {
-    display: none;
-  }
-
-  @include at-breakpoint($small) {
-    $animation-length: 5s;
-
-    position: relative;
-    @include transform-style(preserve-3d);
-    @include experimental('animation', spin $animation-length infinite linear);
-
-    > img {
-      width: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-      @include backface-visibility(hidden);
-    }
-    .icon-2, .icon-4 {
-      @include rotateY(180deg);
-    }
-    .icon-3, .icon-4 {
-      display: block;
-      opacity: 0;
-    }
-    .icon-1 {
-      @include experimental('animation', spin-helper-1 $animation-length infinite linear);
-    }
-    .icon-3 {
-      @include experimental('animation', spin-helper-3 $animation-length infinite linear);
-    }
-    .icon-2 {
-      @include experimental('animation', spin-helper-2 $animation-length infinite linear);
-    }
-    .icon-4 {
-      @include experimental('animation', spin-helper-4 $animation-length infinite linear);
-    }
   }
 }

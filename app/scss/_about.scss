@@ -65,19 +65,22 @@ $a: 'about';
 .#{$a}-email-link {
   @include rms(4);
   font-weight: 600;
+  line-height: 1;
 
-  span {
-    display: block;
-    font-size: 0.667em;
-    font-style: italic;
-    line-height: 1.5;
-  }
+  // span {
+  //   display: block;
+  //   font-size: 0.667em;
+  //   font-style: italic;
+  //   line-height: 1.5;
+  // }
 
   // Put an icon before it
   &::before {
-    float: left;
-    line-height: 2.6;
-    margin-right: 0.5em;
+    @include rms(3);
+    position: relative;
+    top: 0.1em;
+    margin-right: 0.3em;
+    vertical-align: bottom;
 
     // But only on medium-ish screens
     display: none;

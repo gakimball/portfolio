@@ -5,6 +5,7 @@
 
 .button {
   $padding: 0.5em;
+  $hover-brightness: 20%;
 
   position: relative;
   display: inline-block;
@@ -23,8 +24,8 @@
     @include transition-timing-function(ease-out);
   }
   &:hover {
-    color: lighten($primary-color, 25%);
-    border-bottom-color: lighten($primary-color, 25%);
+    color: lighten($primary-color, $hover-brightness);
+    border-bottom-color: lighten($primary-color, $hover-brightness);
     cursor: pointer;
   }
 }

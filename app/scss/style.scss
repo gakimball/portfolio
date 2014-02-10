@@ -1,3 +1,4 @@
+// Plugins
 @import "compass/reset";
 @import "compass/css3";
 @import "compass/css3/user-interface";
@@ -6,17 +7,24 @@
 @import "modular-scale";
 @import "responsive-modular-scale";
 
+// Mixins
 @import "animation";
 @import "utility";
+
+// Basics
 @import "layout";
 @import "colors";
 @import "fonts";
 @import "typography";
+
+// Common omponents
 @import "button";
 
+// Template
 @import "header";
 @import "footer";
 
+// Homepage components
 @import "homepage-hero";
 @import "homepage-hero-sketches";
 @import "resume";
@@ -24,4 +32,5 @@
 @import "about";
 @import "external-links";
 
+// Interior pages
 @import "case-study";
