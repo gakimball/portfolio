@@ -38,20 +38,22 @@ $el: 'external-links';
     font-weight: 300;
   }
 
+  // Inline links
+  a {
+    color: $secondary-color;
+    &:hover {
+      color: lighten($secondary-color, 15%);
+    }
+  }
+
   // Link below content
   .link {
     margin-top: -0.25em;
 
-    a {
-      color: $secondary-color;
-      &:hover {
-        color: lighten($secondary-color, 15%);
-      }
-      // Put a right-facing arrow after it
-      &::after {
-        content: ' \2192';
-        font-weight: 700;
-      }
+    // Put a right-facing arrow after it
+    &::after {
+      content: ' \2192';
+      font-weight: 700;
     }
   }
 }

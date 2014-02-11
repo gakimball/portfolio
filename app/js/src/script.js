@@ -1,4 +1,4 @@
-(function($) {
+(function() {
 
   var $body  = $('body');
   var $modal = $('[data-resume-modal]');
@@ -40,4 +40,4 @@
 
   console.log("Ye findeth yeself in yon inspector. Ye see a CONSOLE.");
 
-})(window.Zepto);
+})();
