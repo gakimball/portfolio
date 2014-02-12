@@ -11,7 +11,6 @@ $cs: 'case-study';
   margin-bottom: 1em;
 
   @include at-breakpoint($medium) {
-    margin-bottom: 2em;
     padding: $gutter-width / 2;
   }
 
@@ -35,6 +34,11 @@ $cs: 'case-study';
 
 .#{$cs}-body {
   @include container;
+  margin-bottom: 1em;
+
+  @include at-breakpoint($medium) {
+    margin-bottom: 2em;
+  }
 
   .thumb {
     display: block;

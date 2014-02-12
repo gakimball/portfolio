@@ -12,3 +12,22 @@
     @content;
   } 
 }
+
+@include keyframes(flip-up) {
+  0% {
+    opacity: 0;
+    @include rotateX(90deg);
+  }
+  10% {
+    opacity: 1;
+    @include rotateX(0deg);
+  }
+  23% {
+    opacity: 1;
+    @include translateY(0px);
+  }
+  33%, 100% {
+    opacity: 0;
+    @include translateY(50px);
+  }
+}

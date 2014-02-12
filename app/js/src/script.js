@@ -5,10 +5,10 @@
 
   // Animation stuff
   $(window)
-    .on('focus', function() {
+    .on('focus animate', function() {
       $body.removeClass('sketches-on').addClass('sketches-on');
     })
-    .trigger('focus');
+    .trigger('animate');
 
   // Modal stuff
   $('[data-resume-open]').click(function() {
@@ -16,10 +16,13 @@
     $body.addClass('modal-open');
     return false;
   });
-  $('[data-resume-close]').click(function() {
-    $modal.removeClass('is-open');
-    $body.removeClass('modal-open');
-    return false;
+  $modal.click(function(event) {
+    var target = $(event.target);
+    if (target.is(this) || target.is('[data-resume-close]')) {
+      $modal.removeClass('is-open');
+      $body.removeClass('modal-open');
+      return false;
+    }
   });
 
   // Doge stuff

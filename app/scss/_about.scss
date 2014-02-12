@@ -8,11 +8,26 @@ $a: 'about';
 // Container
 .#{$a} {
   @include clearfix;
+  padding-bottom: 1em;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 1em;
+
+  @include at-breakpoint($small) {
+    padding-bottom: 2em;
+    margin-bottom: 2em;
+  }
+  @include at-breakpoint($large) {
+    padding-bottom: 3em;
+    margin-bottom: 3em;
+  }
 
   h2 {
-    @include at-breakpoint($medium) {
-      margin-bottom: 1em;
-    }
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  strong, a {
+    font-weight: 500;
   }
 }
 
@@ -38,10 +53,11 @@ $a: 'about';
 @include at-breakpoint($small) {
   .#{$a}-photo {
     @include span-columns(3);
+    @include isolate(10);
   }
   .#{$a}-bio {
     @include span-columns(9);
-    @include omega;
+    @include isolate(1);
   }
 }
 @include at-breakpoint($large) {
@@ -51,13 +67,9 @@ $a: 'about';
       font-weight: 300;
     }
   }
-  .#{$a}-photo {
-    @include span-columns(3);
-  }
   .#{$a}-bio {
     @include span-columns(8);
-    @include pre(1);
-    @include omega;
+    @include isolate(1);
   }
 }
 

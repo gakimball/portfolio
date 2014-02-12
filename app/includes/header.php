@@ -15,8 +15,8 @@ require $base.'/lib/github.php';
 
 <head>
 
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Geoff Kimball – web + mobile designer</title>
 
@@ -34,7 +34,7 @@ require $base.'/lib/github.php';
       <span class="logo-after">web + mobile designer</span>
 
       <div class="header-contact">
-        <a href="mailto:gakimball@bsu.edu" class="email ss-mail">Email</a>
+        <a href="mailto:geoff@geoffkimball.com" class="email ss-mail">Email</a>
         <a href="http://twitter.com/geoffkimball" class="twitter ss-twitter" target="_blank">Twitter</a>
       </div>
     </div>

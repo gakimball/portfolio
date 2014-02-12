@@ -10,7 +10,9 @@ $el: 'external-links';
   @include container;
 
   h2 {
-    text-indent: -9999px;
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
   }
 }
 

@@ -41,6 +41,9 @@ $pi: 'portfolio-item';
   .subtitle {
     color: $secondary-color;
   }
+  .button {
+    margin-bottom: 0;
+  }
 
   .inception {
     @include rms(2);

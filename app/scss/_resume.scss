@@ -15,6 +15,7 @@ $rm: 'resume-modal';
   bottom: 0;
   overflow: scroll;
   -webkit-overflow-scrolling: touch;
+  cursor: pointer;
 
   h2 {
     color: white;
@@ -104,6 +105,7 @@ $rm: 'resume-modal';
   @include container;
   max-width: emCalc(900px);
   padding: 1em;
+  cursor: default;
 }
 
 .modal-open {
