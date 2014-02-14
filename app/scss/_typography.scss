@@ -37,16 +37,16 @@ body {
   text-shadow: none;
 }
 
-@include set-scales(16px 100px, fourth(), $small-width augmented-fourth(), $large-width fifth());
+@include rms-set-scales(16px 100px, $fourth, $small-width $augmented-fourth, $large-width $fifth);
 
 // Basic type reset
 h1, h2, h3, h4, h5, h6, p, ul, li, pre {
   margin-bottom: 1rem;
 }
 p, li {
-  line-height: fourth();
+  line-height: $fourth;
   @include at-breakpoint($medium) {
-    line-height: fifth();
+    line-height: $fifth;
   }
 }
 em, i {

@@ -16,6 +16,7 @@ $rm: 'resume-modal';
   overflow: scroll;
   -webkit-overflow-scrolling: touch;
   cursor: pointer;
+  z-index: 10000;
 
   h2 {
     color: white;
@@ -62,12 +63,12 @@ $rm: 'resume-modal';
 
   h2, .buttons {
     position: relative;
-    top: -5em;
+    @include transform(translateY(-5em));
   }
   .resume {
     opacity: 0;
     position: relative;
-    top: 10em;
+    @include transform(translateY(10em));
   }
 
   // Visible state
@@ -77,10 +78,10 @@ $rm: 'resume-modal';
     bottom: 0;
 
     h2, .buttons {
-      top: 0;
+      @include transform(translateY(0em));
     }
     .resume {
-      top: 0;
+      @include transform(translateY(0em));
       opacity: 1;
     }
   }
@@ -88,12 +89,18 @@ $rm: 'resume-modal';
   // Transitions
   &, &.is-open {
     h2, .buttons {
-      @include transition-property(top);
-      @include transition-duration(0.4s);
-      @include transition-timing-function(ease-out);
+      -webkit-transition: -webkit-transform 0.4s ease-out;
+         -moz-transition: -moz-transform 0.4s ease-out;
+          -ms-transition: -ms-transform 0.4s ease-out;
+           -o-transition: -o-transform 0.4s ease-out;
+              transition: transform 0.4s ease-out;
     }
     .resume {
-      @include transition-property(top opacity);
+      -webkit-transition-property: -webkit-transform, opacity;
+      -moz-transition-property: -moz-transform, opacity;
+      -ms-transition-property: -ms-transform, opacity;
+      -o-transition-property: -o-transform, opacity;
+      transition-property: transform, opacity;
       @include transition-duration(0.4s);
       @include transition-timing-function(ease-out);
     }

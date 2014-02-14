@@ -53,7 +53,7 @@ $el: 'external-links';
     margin-top: -0.25em;
 
     // Put a right-facing arrow after it
-    &::after {
+    a::after {
       content: ' \2192';
       font-weight: 700;
     }

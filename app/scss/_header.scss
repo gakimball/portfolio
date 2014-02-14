@@ -73,7 +73,7 @@ $h: 'header';
     // Icon
     &::before {
       margin-right: 0.4em;
-      @include rms(2);
+      @include rms(2, 2);
       position: relative;
       top: 0.2em;
     }
