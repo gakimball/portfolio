@@ -43,6 +43,7 @@ $el: 'external-links';
   // Inline links
   a {
     color: $secondary-color;
+    font-weight: 600;
     &:hover {
       color: lighten($secondary-color, 15%);
     }
