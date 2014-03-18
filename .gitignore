@@ -4,4 +4,4 @@ node_modules
 .env
 .sass-cache
 css
-assets
+_assets

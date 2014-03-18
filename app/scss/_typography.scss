@@ -94,10 +94,12 @@ code {
   .tagline {
     @include rms(9);
     font-weight: 900;
+    line-height: 1;
   }
   .tagline-after {
     @include rms(3);
     font-weight: 400;
+    line-height: 1.75;
   }
   .button {
     @include rms(3);
