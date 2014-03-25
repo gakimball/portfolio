@@ -45,7 +45,10 @@ h1, h2, h3, h4, h5, h6, p, ul, li, pre {
 }
 p, li {
   line-height: $fourth;
-  @include at-breakpoint($medium) {
+  @include at-breakpoint($small) {
+    line-height: $augmented-fourth;
+  }
+  @include at-breakpoint($large) {
     line-height: $fifth;
   }
 }

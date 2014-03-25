@@ -8,7 +8,9 @@
 </div>
 
 <div class="case-study-body">
-  <img src="img/work/playground/01.jpg" alt="Screenshot of ZURB Playground's home page." class="thumb">
+  <figure class="thumb">
+    <img src="img/work/playground/01.jpg" alt="Screenshot of ZURB Playground's home page.">
+  </figure>
 
   <p><em>Design is a collaborative and multidisciplinary process. Although much of the design and front-end code is my work, I was following ZURB's internal design language, and I had the help and guidence of the company's incredibly talented design, engineering, and content teams.</em></p>
 
@@ -30,8 +32,8 @@
 
   <p>I also got the opportunity to contribute a piece of content to the Playground to coincide with its relaunch. It's an experimental jQuery plugin called <a href="http://zurb.com/playground/wrangle-jquery-plugin">Wrangle</a>.</p>
 
-  <figure>
-    <img src="img/work/playground/02.jpg" alt="Screenshot of the Playground page for Wrangle" class="thumb">
+  <figure class="thumb">
+    <img src="img/work/playground/02.jpg" alt="Screenshot of the Playground page for Wrangle">
     <figcaption>Project page for Wrangle, designed by me.</figcaption>
   </figure>
 
@@ -39,8 +41,8 @@
 
   <p>Making the plugin was a complex process, due in no small part to my desire to make it compatible with touch and mouse, and make it as cross-platform as possible. Juggling a dozen different touch and mouse events handled slightly differently on every platform is hard! I wrote about the process of making the plugin on its <a href="http://zurb.com/playground/wrangle-jquery-plugin">official page</a>.</p>
 
-  <figure>
-    <img src="img/work/playground/03.jpg" alt="Screenshot of the Wrangle demo page" class="thumb">
+  <figure class="thumb">
+    <img src="img/work/playground/03.jpg" alt="Screenshot of the Wrangle demo page">
     <figcaption>The Wrangle demo in action.</figcaption>
   </figure>
 

@@ -45,51 +45,51 @@ $h: 'header';
     cursor: default;
     vertical-align: baseline;
   }
-}
 
-// Inner container for header
-.#{$h}-inner {
-  @include container;
-  position: relative;
-}
-
-// Email and Twitter links
-.#{$h}-contact {
-  display: block;
-  padding: {
-    top: 0.75em;
-    bottom: 0.5em;
+  // Inner container for header
+  &-inner {
+    @include container;
+    position: relative;
   }
 
-  a {
-    display: inline-block;
-    color: #fff;
-    margin-right: 0.75em;
-
-    &:hover {
-      color: #ccc;
+  // Email and Twitter links
+  &-contact {
+    display: block;
+    padding: {
+      top: 0.75em;
+      bottom: 0.5em;
     }
-
-    // Icon
-    &::before {
-      margin-right: 0.4em;
-      @include rms(2, 2);
-      position: relative;
-      top: 0.2em;
-    }
-  }
-
-  // Shift links to the far right side of the bar
-  @include at-breakpoint($medium) {
-    position: absolute;
-    top: 0.35em;
-    right: $gutter-width;
-    padding: 0;
 
     a {
-      margin: {
-        right: 0;
-        left: 0.75em;
+      display: inline-block;
+      color: #fff;
+      margin-right: 0.75em;
+
+      &:hover {
+        color: #ccc;
+      }
+
+      // Icon
+      &::before {
+        margin-right: 0.4em;
+        @include rms(2, 2);
+        position: relative;
+        top: 0.2em;
+      }
+    }
+
+    // Shift links to the far right side of the bar
+    @include at-breakpoint($medium) {
+      position: absolute;
+      top: 0.35em;
+      right: $gutter-width;
+      padding: 0;
+
+      a {
+        margin: {
+          right: 0;
+          left: 0.75em;
+        }
       }
     }
   }

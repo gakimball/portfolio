@@ -35,37 +35,36 @@ $cs: 'case-study';
 .#{$cs}-body {
   @include container;
   margin-bottom: 1em;
+  max-width: 630px;
 
   @include at-breakpoint($medium) {
     margin-bottom: 2em;
   }
 
   .thumb {
+    @include clearfix;
     display: block;
-    border: 1px solid #999;
     margin: 1em auto;
     width: 100%;
-    max-width: 500px;
-
-    @include at-breakpoint($small) {
-      max-width: 700px;
-    }
-    @include at-breakpoint($large) {
-      max-width: 900px;
-    }
 
     @include at-breakpoint($medium) {
       margin: 2em auto;
     }
 
-    & + figcaption {
+    img {
+      display: block;
+      width: 100%;
+      border: 1px solid #999;
+    }
+
+    figcaption {
       width: 100%;
       max-width: 500px;
       padding: 0.75em 1em;
       border: 1px solid #ccc;
       border-top-width: 0;
       text-align: center;
-      margin: -1em auto 1em auto;
+      margin: 1em auto 0 auto;
       font-style: italic;
       position: relative;
       font-weight: 300;
@@ -90,16 +89,18 @@ $cs: 'case-study';
     }
   }
 
-  h3, h4, p, ul, ol, pre {
-    @include at-breakpoint($small) {
-      @include span-columns(10);
-      @include push(1);
-    }
-    @include at-breakpoint($large) {
-      @include span-columns(8);
-      @include push(2);
-    }
-  }
+  // h3, h4, p, ul, ol, pre {
+  //   @include clearfix;
+
+  //   @include at-breakpoint($small) {
+  //     @include span-columns(10);
+  //     @include push(1);
+  //   }
+  //   @include at-breakpoint($large) {
+  //     @include span-columns(8);
+  //     @include push(2);
+  //   }
+  // }
 
   p, ul {
     @include rms(1);
