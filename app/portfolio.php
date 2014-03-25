@@ -8,7 +8,9 @@
 </div>
 
 <div class="case-study-body">
-  <img src="img/work/portfolio/02.jpg" alt="Screenshot of screenshot of screenshot of screenshot of screenshot of this page." class="thumb">
+  <figure class="thumb">
+    <img src="img/work/portfolio/02.jpg" alt="Screenshot of screenshot of screenshot of screenshot of screenshot of this page.">
+  </figure>
 
   <p>I find designing a portfolio to be an interesting challenge. I can label myself in plenty of ways, but ultimately I'm a <em>web designer</em>. And I find setting myself apart as a <em>web designer</em> to be a monumental task. We're eveywhere! How do I make myself look different? I can't fall into <a href="http://theworstportfolioever.com/">this</a> trap.</p>
 
@@ -22,7 +24,9 @@
 
   <p>So let's go back to that quandry of wanting to be unique. At some point I went for broke and just decided to try being <em>weird</em> instead. One day at work while I was waiting for a meeting to start, I opened up Photoshop and made this:</p>
 
-  <img src="img/work/portfolio/01.jpg" alt="Screenshot of a portfolio mockup in Photoshop." class="thumb">
+  <figure class="thumb">
+    <img src="img/work/portfolio/01.jpg" alt="Screenshot of a portfolio mockup in Photoshop.">
+  </figure>
 
   <p>This concept was immediately appealing to me. Hero units are all well and good, but why not try doing away with the whole "I hand-craft beautiful interactive experiences" talk? I can talk about my status as a designer without the usual flowery language. (Just ignore the sub-headline <em>right underneath</em> the hero unit which half-undermines my point.)</p>
 

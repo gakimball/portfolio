@@ -8,7 +8,9 @@
 </div>
 
 <div class="case-study-body">
-  <img src="img/work/polymath/01.jpg" class="thumb" alt="Screenshot of Polymath's about page.">
+  <figure class="thumb">
+    <img src="img/work/polymath/01.jpg" class="thumb" alt="Screenshot of Polymath's about page.">
+  </figure>
 
   <p><i>Design is a collaborative, multidisciplinary effort. Although most of this design and all of the code is all me, I had input from my cohorts at work, collaborators on the Polymath project, and a handful of programmers who know their way around the web development world in ways I don't.</i></p>
 
@@ -20,8 +22,8 @@
 
   <p>Perhaps the most challenging thing about this project is that it's been a constantly moving target. We've never been quite sure what it is, other than perhaps an online label. We've tried to expand into other mediums, like video and writing, bringing new people onto the project, but not everything we've done has been successful. So as the needs (and sometimes realities) of the content have changed, I've changed my thinking on the design end to adapt.</p>
 
-  <figure>
-    <img src="img/work/polymath/02.jpg" alt="Screenshot showing a list of albums with their tracks." class="thumb">
+  <figure class="thumb">
+    <img src="img/work/polymath/02.jpg" alt="Screenshot showing a list of albums with their tracks.">
     <figcaption>The release list for an artist.</figcaption>
   </figure>
 
@@ -37,8 +39,8 @@
 
   <p>Polymath's visual design used to be dark, because I like dark websites, but with this new design we went white. With that in mind I decided that the core visual design would be as unobtrusive as possible, existing as a blank canvas for the content to sit on. This works because the scope of the project has expanded in a few different ways, so focusing on the content and its presentation is more important to me than establishing a visual identity for the site. The mediums and the content give the site its identity. For example, the site doesn't have a primary color; instead, each medium has its own color, which dominates that section, being used for buttons, links, and so on.</p>
 
-  <figure>
-    <img src="img/work/polymath/03.jpg" alt="Screenshot of an album page on Polymath" class="thumb">
+  <figure class="thumb">
+    <img src="img/work/polymath/03.jpg" alt="Screenshot of an album page on Polymath">
     <figcaption>An album's page.</figcaption>
   </figure>
 
@@ -48,8 +50,8 @@
 
   <p>A handful of pages do incorporate full-bleed imagery, such as the artist page, shown below, which details a band or project and lists its albums. However, the imagery is implemented in a way that is scalable, is easy to work with, and enhances the content rather than obstructing or distracting from it.</p>
 
-  <figure>
-    <img src="img/work/polymath/11.jpg" class="thumb" alt="Screenshot of an artist's page on Polymath.">
+  <figure class="thumb">
+    <img src="img/work/polymath/11.jpg" alt="Screenshot of an artist's page on Polymath.">
     <figcaption>An artist page.</figcaption>
   </figure>
 
@@ -61,8 +63,8 @@
 
   <p>One of the site's core features, there since the beginning, is the audio player fixed at the bottom of the page, which follows you around the site. Building a responsive audio player is a tricky challenge, from a design and technical perspective. Building an entire <em>site</em> full of clickable links that seamlessly load music into that player is an even trickier challenge.</p>
 
-  <figure>
-    <img src="img/work/polymath/04.jpg" alt="Screenshot of Polymath's audio player" class="thumb">
+  <figure class="thumb">
+    <img src="img/work/polymath/04.jpg" alt="Screenshot of Polymath's audio player">
     <figcaption>The audio player with its playlist open.</figcaption>
   </figure>
 
@@ -76,8 +78,8 @@
 
   <p>Many of the early concepts revolved around circles, such as the one you see below. This specific design utilizes three different sized circles which all overlap. The smallest circles represent the people who contribute to Polymath; the middle circles represent the four mediums (music, video, writing, audio); and the large center circle represents the project itself, which binds the mediums and the people together.</p>
 
-  <figure>
-    <img src="img/work/polymath/06.jpg" alt="A logo which uses multiple colored interlocking circles" class="thumb">
+  <figure class="thumb">
+    <img src="img/work/polymath/06.jpg" alt="A logo which uses multiple colored interlocking circles">
     <figcaption>The interlocking circle logo.</figcaption>
   </figure>
 
@@ -90,15 +92,15 @@
 
   <p>After fooling around unsuccesfully with more circle logos, my next "breakthrough" was what I called the "gem logo". The site has always used heart symbols here and there; the very first code I wrote for the site was building a share modal (haha, share buttons) which used a heart symbol with the phrase "share the love". I was also really into this logo for a while, especially paired with Futura or Europa, but I couldn't get anyone else on board.</p>
 
-  <figure>
-    <img src="img/work/polymath/08.jpg" alt="Various logo sketches using an angular, heart-shaped gem" class="thumb">
+  <figure class="thumb">
+    <img src="img/work/polymath/08.jpg" alt="Various logo sketches using an angular, heart-shaped gem">
     <figcaption>The gem logo and its variations.</figcaption>
   </figure>
 
   <p>But we continued working with the heart motif. A friend of mine on the project sent me a design which incorporated the initials "PM" into a heart shape. I was intrigued by this idea and tried making something similar. At this point I had gotten over my symbolism fetish, and just wanted something simple and unique.</p>
 
-  <figure>
-    <img src="img/work/polymath/09.jpg" alt="A heart-shaped logo with a red letter P overlapping the heart" class="thumb">
+  <figure class="thumb">
+    <img src="img/work/polymath/09.jpg" alt="A heart-shaped logo with a red letter P overlapping the heart">
     <figcaption>The final logo design.</figcaption>
   </figure>
 
