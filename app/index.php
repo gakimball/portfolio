@@ -31,9 +31,9 @@
     </div>
 
     <div class="about-bio">
-      <p>My name is <strong>Geoff Kimball</strong>, and I'm a soon-to-be-graduating senior at Ball State University in Muncie, IN. At my current job with BSU's Emerging Technologies department, I contribute to the design and development of websites, desktop and mobile web apps, and native apps. Designing or coding, I just want to make awesome things for people. I'm interested in the ways we incorporate technology into our lives, and my ambition is to work on products and services that affect millions of people.</p>
+      <p>My name is <strong>Geoff Kimball</strong>. I'm about to graduate from Ball State University, and I'm about a month away from starting a job at <a href="http://zurb.com">ZURB</a> as a product designer. I design and I code, but whichever I'm doing, I just want to make awesome things for people. I'm interested in the ways we incorporate technology into our lives, and my ambition is to work on products and services that affect millions of people.</p>
 
-      <p><a href="#" data-resume-open>Here's my resume.</a> <em>And hey, I'm looking for a full-time position!</em></p>
+      <p><a href="#" data-resume-open>Here's my resume.</a> <em>I'm not currently looking for work.</em></p>
     </div>
   </section>
   
