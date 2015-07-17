@@ -45,7 +45,7 @@ require $base.'/lib/github.php';
       <span class="logo-after">web + mobile designer</span>
 
       <div class="header-contact">
-        <a href="mailto:geoff@geoffkimball.com" class="email ss-mail">Email</a>
+        <a href="mailto:geoff@zurb.com" class="email ss-mail">Email</a>
         <a href="http://twitter.com/geoffkimball" class="twitter ss-twitter" target="_blank">Twitter</a>
       </div>
     </div>
