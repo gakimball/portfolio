@@ -1,6 +1,6 @@
 # Hello.
 
-This is all of the code for my portfolio website, [http://geoffkimball.com].
+This is all of the code for my old portfolio website, <http://geoffkimball.com>. In March 2016 I launched a new portfolio, which is not this one.
 
 If you want to run the code on your local machine for some reason:
 
